@@ -1,31 +1,345 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&display=swap');
 
-.out, .outMain {
-  height: 100%;
-  width: 100%;
-  margin: 0;
+.out, .outMain, p {
+    margin: 0;
 }
 
-.Ag {
-  font: 800 80px/80px 'Raleway', sans-serif;
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Ag3 {
+    font: 300 20px/30px 'Raleway', sans-serif;
+}
+
+.Ag4 {
+    font: 400 18px/21px 'Raleway', sans-serif;
+}
+
+.Ag41 {
+    font: 400 20px/23px 'Raleway', sans-serif;
+}
+
+.Ag6 {
+    font: 600 27px/31px 'Raleway', sans-serif;
+}
+
+.Ag61 {
+    font: 600 22px/26px 'Raleway', sans-serif;
+}
+
+.Ag7 {
+    font: 700 50px/60px 'Raleway', sans-serif;
+}
+
+.Ag81 {
+    font: 800 14px/16px 'Raleway', sans-serif;
+}
+
+.Ag8l {
+    font: 800 22px/26px 'Raleway', sans-serif;
+}
+
+.Ag8 {
+    font: 800 80px/80px 'Raleway', sans-serif;
 }
 
 .colorWhite {
-  color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.VividBrown {
+    background-color: #BF8341;
 }
 
 .Head {
-  background-image: url("../img/topBack.png");
-  background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 75.2%, 0 90.2%);
-  height: 100%;
+}
+
+.headBack {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.hd1{
+    background: url("../img/topBack.png") center center no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 76.7%, 0 91.8%);
+}
+.hd2{
+    background: url("../img/test2.png") center center no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 76.7%, 0 91.8%);
+}
+.headBack ~ .headBack {
+    display: none;
+}
+
+.firstSet {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.firstLine {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftTop {
+    flex: 0.66 auto;
+}
+
+.leftCorner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 364px;
+    margin: 33px 0 0 auto;
+}
+
+.phones {
+    display: flex;
+    align-items: center;
+}
+
+.viberIcon, .telegramIcon {
+
+    margin: 0 4px;
+}
+
+.phone {
+    font-size: 19px;
+}
+
+.phoneBold {
+    font-weight: 700;
+}
+
+.catTitle {
+    display: flex;
+    max-width: 371px;
+    margin: 25px 0 0 auto;
+    align-items: center;
+}
+
+.burger {
+    height: 20px;
+    width: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 9px 0 0;
+}
+
+.burgerLine {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.bl2 {
+    width: 50%
+}
+
+.bl3 {
+    width: 70%
+}
+
+.catalog {
+    max-width: 370px;
+    margin: 14px 0 0 auto;
+    display: flex;
+    flex: 3 1 auto;
+}
+
+.catTitleP {
+    letter-spacing: -0.4px;
+}
+
+.catalogItem {
+    padding: 0 9% 0 0;
+}
+
+.centerTop {
+    flex: 1 1 auto;
+    width: 200px;
+    display: block;
+    height: 134px;
+    margin: 27px 0 0;
+}
+
+.rightTop {
+    flex: 0.7 1 auto;
+    padding: 2% 0 0;
+}
+
+.rightTopMenu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 306px;
+}
+
+.socialRight {
+
+    align-items: center;
+}
+
+.socialRightLi {
+
+    min-width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.globes {
+    display: flex;
+    flex: 0.1 1 auto;
+}
+
+.globesTitle {
+    display: flex;
+}
+
+.mainMenu {
+    display: flex;
+    max-width: 310px;
+    flex-wrap: wrap;
+    justify-content: end;
+    padding: 5% 0 0;
+}
+
+.mainMenuLi {
+    padding: 2% 5%;
+}
+
+.secondLine {
+    display: flex;
+    padding-top: 2.3%;
+}
+
+.slideNavy {
+    flex: 0.6 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    max-width: 1900px;
+    margin: 8% auto 0;
+}
+
+.slideNavySet {
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90px;
+}
+
+.arrowRight {
+
+    display: flex;
+    justify-content: end;
+}
+
+.position {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainProposition {
+    flex: 0.1 1 auto;
+}
+
+.mainProposition ~ .mainProposition {
+    display: none;
+}
+
+.headMain {
+    max-width: 580px;
+    font-size: 87px;
+    padding: 10.5% 0 11.6% 0;
+    line-height: 89px;
+}
+
+.actionMain {
+    position: relative;
+    display: block;
+    width: 50%;
+    padding: 16px 14px;
+    font-size: 25px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.Slider {
+    height: 73.2vh;
+    background-size: cover;
+    position: relative;
+    flex: 1.4 1 auto;
+}
+
+.SliderItem {
+    width: 72%;
+    height: 100%;
+    background: url("../img/FL.jpg") center center no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.SI1 {
+    top: 0;
+    clip-path: polygon(-0.07% 17.13%, 100.85% 0.18%, 101.25% 100.17%, 0px 90.56%);
+    left: 30px;
+    margin: auto;
+}
+
+.SI2 {
+    top: 0;
+    clip-path: polygon(83.94% 17.13%, 100.85% 0.18%, 101.25% 100.17%, 509px 89.04%);
+    left: 30px;
+    margin: auto;
+}
+
+.secondDisplay {
+    display: flex;
+}
+
+.Slider2 {
+    flex: 1 1 60%;
+    position: relative;
+    height: 77vh;
+}
+
+.photo {
+    width: 72%;
+    height: 100%;
+    background: url("../img/FL.jpg") center center no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.p1 {
+    top: 0;
+    clip-path: polygon(-0.22% 2.7%, 98.55% 11.66%, 97.41% 84.48%, 2px 99.61%);
+    left: 30px;
+    margin: auto;
+}
+
+.p2 {
+    top: 0;
+    clip-path: polygon(8.43% 12.67%, 100.85% 0.18%, 101.25% 100.17%, 51px 89.16%);
+    right: 30px;
+    margin: auto;
 }
 
 .content {
-  width: 330px;
-  height: 330px;
-  background-image: url("../img/FL.jpg");
-  background-size: cover;
-  clip-path: polygon(0 0, 100% 13%, 100% 76%, 0 100%);
+    flex: 1 1 auto;
 }
-
