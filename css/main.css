@@ -353,76 +353,84 @@ ul {
     height: 100%;
     background-size: cover;
     position: absolute;
+    opacity: 0;
+    transition-property: clip-path, left;
+    transition-duration: .7s;
+    transition-timing-function: linear;
 }
 
 .SI0 {
     top: 0;
     background: url("../img/test1.jpg") center center no-repeat;
-    clip-path: polygon(85.25% 11.23%, 100.85% 0.18%, 101.25% 100.17%, 640px 87.95%);
+    clip-path: polygon(-0.07% 17.13%, 27.87% 7.54%, 29.86% 99.26%, 0px 90.56%);
     left: 30px;
     margin: auto;
-    transition: clip-path 1s linear;
 }
 
 .SI0act {
-    clip-path: polygon(-0.07% 17.13%, 0.4% 9.93%, 1.20% 97.45%, 0px 90.56%);
+    opacity: 1;
+    left: -3%;
+    clip-path: polygon(-0.07% 17.13%, 97.66% 4.38%, 98.72% 98.25%, 0px 90.56%);
 }
-
+@keyframes Mirror1 {
+    0%{}
+    50%{}
+    100%{}
+}
 .SI1 {
     top: 0;
     background: url("../img/test2.jpg") center center no-repeat;
-    clip-path: polygon(83.94% 17.13%, 100.85% 0.18%, 101.25% 100.17%, 509px 89.04%);
+    clip-path: polygon(86.33% 24.95%, 101.51% 5.73%, 101.11% 99.26%, 648px 91.08%);
     left: 30px;
     margin: auto;
 }
 
 .SI1act {
-    animation: Mirror 1s linear;
-}
-
-@keyframes Mirror {
-    0% {
-        clip-path: polygon(70.94% 30.13%, 100.85% 0.18%, 101.25% 100.17%, 509px 89.04%);
-    }
-    50% {
-        clip-path: polygon(70.94% 30.13%, 100.85% 0.18%, 101.25% 100.17%, 509px 89.04%);
-    }
-    100% {
-        clip-path: polygon(70.94% 30.13%, 100.85% 0.18%, 101.25% 100.17%, 509px 89.04%);
-    }
+    opacity: 1;
+    left: -3%;
+    clip-path: polygon(-0.07% 17.13%, 98.06% 4.71%, 98.33% 98.36%, 0px 90.56%);
 }
 
 .SI2 {
     top: 0;
     background: url("../img/test3.jpg") center center no-repeat;
-    clip-path: polygon(83.94% 17.13%, 100.85% 0.18%, 101.25% 100.17%, 509px 89.04%);
+    clip-path: polygon(90.18% 15.66%, 100.85% 0.18%, 101.25% 100.17%, 674px 91.19%);
     left: 30px;
     margin: auto;
 }
 
 .SI2act {
+    opacity: 1;
+    left: -3%;
+    clip-path: polygon(-0.07% 17.13%, 98.06% 4.71%, 98.33% 98.36%, 0px 90.56%);
 }
 
 .SI3 {
     top: 0;
     background: url("../img/test4.jpg") center center no-repeat;
-    clip-path: polygon(83.94% 17.13%, 100.85% 0.18%, 101.25% 100.17%, 509px 89.04%);
+    clip-path: polygon(83.94% 17.13%, 100.85% 0.18%, 101.25% 100.17%, 634px 84.96%);
     left: 30px;
     margin: auto;
 }
 
 .SI3act {
+    opacity: 1;
+    left: -3%;
+    clip-path: polygon(-0.07% 17.13%, 98.06% 4.71%, 98.33% 98.36%, 0px 90.56%);
 }
 
 .SI4 {
     top: 0;
     background: url("../img/test5.jpg") center center no-repeat;
-    clip-path: polygon(83.94% 17.13%, 100.85% 0.18%, 101.25% 100.17%, 509px 89.04%);
+    clip-path: polygon(83.94% 17.13%, 100.85% 0.18%, 101.25% 100.17%, 632px 85.98%);
     left: 30px;
     margin: auto;
 }
 
 .SI4act {
+    opacity: 1;
+    left: -3%;
+    clip-path: polygon(-0.07% 17.13%, 98.06% 4.71%, 98.33% 98.36%, 0px 90.56%);
 }
 
 .secondDisplay {

@@ -20,11 +20,9 @@ shch.topSlider = function () {
         this.number--;
         this.slide0--;
         this.slide1--;
-        if (this.number < 0) {
-            this.number = 0;
-            this.slide0 = 0;
-            this.slide1 = 1;
-        }
+        if (this.number < 0) this.number = 0;
+        if (this.slide0 < 0) this.slide0 = 0;
+        if (this.slide1 < 1) this.slide1 = 1;
         this.changeMP[this.number].classList.add('mpAct');
         this.changeTitle[this.number].classList.add('actTitle');
         this.changeAction[this.number].classList.add('actM');
@@ -38,12 +36,12 @@ shch.topSlider = function () {
         this.changeTitle[this.number].classList.remove('actTitle');
         this.changeAction[this.number].classList.remove('actM');
         this.changeBack[this.number].classList.remove('actBack');
-        this.changeSI[this.slide0].classList.remove('SI' + this.slide0  + 'act');
+        this.changeSI[this.slide0].classList.remove('SI' + this.slide0 + 'act');
         this.changeSI[this.slide1].classList.remove('SI' + this.slide1 + 'act');
         this.number++;
         this.slide0++;
         this.slide1++;
-        if (this.number > 4) {
+        if (this.number > 3) {
             this.number = 4;
             this.slide0 = 3;
             this.slide1 = 4;
@@ -52,8 +50,8 @@ shch.topSlider = function () {
         this.changeTitle[this.number].classList.add('actTitle');
         this.changeAction[this.number].classList.add('actM');
         this.changeBack[this.number].classList.add('actBack');
-        this.changeSI[this.slide0].classList.add('SI' + this.number + 'act');
-        this.changeSI[this.slide1].classList.add('SI' + (this.number + 1) + 'act');
+        this.changeSI[this.slide0].classList.add('SI' + this.slide0 + 'act');
+        this.changeSI[this.slide1].classList.add('SI' + this.slide1 + 'act');
         this.current.textContent = this.number + 1;
     };
 };
