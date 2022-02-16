@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&display=swap');
 
+.out, .outMain {
+    height: 100%;
+}
+
 .out, .outMain, p {
     margin: 0;
 }
@@ -59,6 +63,7 @@ ul {
 }
 
 .Head {
+    height: 100%;
 }
 
 .headBack {
@@ -68,18 +73,46 @@ ul {
     width: 100%;
     z-index: -1;
 }
-.hd1{
+
+.hd1 {
     background: url("../img/topBack.png") center center no-repeat;
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 76.7%, 0 91.8%);
 }
-.hd2{
-    background: url("../img/test2.png") center center no-repeat;
+
+.hd2 {
+    background: url("../img/test2.jpg") center center no-repeat;
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 76.7%, 0 91.8%);
 }
-.headBack ~ .headBack {
-    display: none;
+
+.hd3 {
+    background: url("../img/test3.jpg") center center no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 76.7%, 0 91.8%);
+}
+
+.hd4 {
+    background: url("../img/test4.jpg") center center no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 76.7%, 0 91.8%);
+}
+
+.hd5 {
+    background: url("../img/test5.jpg") center center no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 76.7%, 0 91.8%);
+}
+
+.headBack {
+    opacity: 0;
+    transition: opacity .7s linear;
+    visibility: collapse;
+}
+
+.actBack {
+    opacity: 1;
+    visibility: visible;
 }
 
 .firstSet {
@@ -224,7 +257,7 @@ ul {
 }
 
 .slideNavy {
-    flex: 0.6 1 auto;
+    flex: 1 1 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,7 +277,6 @@ ul {
 }
 
 .arrowRight {
-
     display: flex;
     justify-content: end;
 }
@@ -254,12 +286,23 @@ ul {
     justify-content: space-between;
 }
 
-.mainProposition {
-    flex: 0.1 1 auto;
+.mainProp {
+    position: relative;
+    z-index: 1;
+    flex: 0.8 1 auto;
 }
 
-.mainProposition ~ .mainProposition {
-    display: none;
+.mainProposition {
+    flex: 0.1 1 auto;
+    opacity: 0;
+    visibility: collapse;
+    transition: opacity, visibility .7s linear;
+    position: absolute;
+}
+
+.mpAct {
+    visibility: visible;
+    opacity: 1;
 }
 
 .headMain {
@@ -267,6 +310,16 @@ ul {
     font-size: 87px;
     padding: 10.5% 0 11.6% 0;
     line-height: 89px;
+    transform: translateX(12%);
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: .7s;
+    transition-timing-function: linear;
+}
+
+.actTitle {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .actionMain {
@@ -277,35 +330,99 @@ ul {
     font-size: 25px;
     letter-spacing: 0.2px;
     text-align: center;
+    opacity: 0;
+    transition-delay: .7s;
+    transition-property: opacity;
+    transition-duration: .7s;
+    transition-timing-function: linear;
+}
+
+.actM {
+    opacity: 1;
 }
 
 .Slider {
     height: 73.2vh;
     background-size: cover;
     position: relative;
-    flex: 1.4 1 auto;
+    flex: 2 1 auto;
 }
 
 .SliderItem {
     width: 72%;
     height: 100%;
-    background: url("../img/FL.jpg") center center no-repeat;
     background-size: cover;
     position: absolute;
 }
 
+.SI0 {
+    top: 0;
+    background: url("../img/test1.jpg") center center no-repeat;
+    clip-path: polygon(85.25% 11.23%, 100.85% 0.18%, 101.25% 100.17%, 640px 87.95%);
+    left: 30px;
+    margin: auto;
+    transition: clip-path 1s linear;
+}
+
+.SI0act {
+    clip-path: polygon(-0.07% 17.13%, 0.4% 9.93%, 1.20% 97.45%, 0px 90.56%);
+}
+
 .SI1 {
     top: 0;
-    clip-path: polygon(-0.07% 17.13%, 100.85% 0.18%, 101.25% 100.17%, 0px 90.56%);
+    background: url("../img/test2.jpg") center center no-repeat;
+    clip-path: polygon(83.94% 17.13%, 100.85% 0.18%, 101.25% 100.17%, 509px 89.04%);
     left: 30px;
     margin: auto;
 }
 
+.SI1act {
+    animation: Mirror 1s linear;
+}
+
+@keyframes Mirror {
+    0% {
+        clip-path: polygon(70.94% 30.13%, 100.85% 0.18%, 101.25% 100.17%, 509px 89.04%);
+    }
+    50% {
+        clip-path: polygon(70.94% 30.13%, 100.85% 0.18%, 101.25% 100.17%, 509px 89.04%);
+    }
+    100% {
+        clip-path: polygon(70.94% 30.13%, 100.85% 0.18%, 101.25% 100.17%, 509px 89.04%);
+    }
+}
+
 .SI2 {
     top: 0;
+    background: url("../img/test3.jpg") center center no-repeat;
     clip-path: polygon(83.94% 17.13%, 100.85% 0.18%, 101.25% 100.17%, 509px 89.04%);
     left: 30px;
     margin: auto;
+}
+
+.SI2act {
+}
+
+.SI3 {
+    top: 0;
+    background: url("../img/test4.jpg") center center no-repeat;
+    clip-path: polygon(83.94% 17.13%, 100.85% 0.18%, 101.25% 100.17%, 509px 89.04%);
+    left: 30px;
+    margin: auto;
+}
+
+.SI3act {
+}
+
+.SI4 {
+    top: 0;
+    background: url("../img/test5.jpg") center center no-repeat;
+    clip-path: polygon(83.94% 17.13%, 100.85% 0.18%, 101.25% 100.17%, 509px 89.04%);
+    left: 30px;
+    margin: auto;
+}
+
+.SI4act {
 }
 
 .secondDisplay {

@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6db7a532-5c8a-46cf-b205-5af3dddb6a72" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/browserconfig.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/plugins.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/vendor/modernizr-3.11.2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site.webmanifest" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +49,8 @@
       <workItem from="1644928766101" duration="4310000" />
       <workItem from="1644941054262" duration="3302000" />
       <workItem from="1644947288944" duration="281000" />
-      <workItem from="1644948381306" duration="1271000" />
+      <workItem from="1644948381306" duration="1517000" />
+      <workItem from="1644990575923" duration="9616000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1644853491401</created>
@@ -73,7 +66,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644861057039</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="start">
+      <created>1644949753628</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1644949753629</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,6 +86,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="start" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="432" y="183" key="#Images" timestamp="1644994565645">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="432" y="183" key="#Images/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1644994565645" />
     <state x="294" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1644853948528">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -94,17 +98,17 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="570" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1644861113158" />
-    <state x="465" y="121" key="CommitChangelistDialog2" timestamp="1644861055791">
+    <state x="465" y="121" key="CommitChangelistDialog2" timestamp="1644949752159">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="465" y="121" key="CommitChangelistDialog2/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1644861055791" />
-    <state x="620" y="266" key="FileChooserDialogImpl" timestamp="1644853458229">
+    <state x="465" y="121" key="CommitChangelistDialog2/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1644949752159" />
+    <state x="620" y="266" key="FileChooserDialogImpl" timestamp="1644994563843">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="620" y="266" key="FileChooserDialogImpl/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1644853458229" />
-    <state x="536" y="257" width="607" height="536" key="find.popup" timestamp="1644931190335">
+    <state x="620" y="266" key="FileChooserDialogImpl/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1644994563843" />
+    <state x="536" y="257" width="607" height="536" key="find.popup" timestamp="1644999352904">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="536" y="257" width="607" height="536" key="find.popup/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1644931190335" />
+    <state x="536" y="257" width="607" height="536" key="find.popup/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1644999352904" />
   </component>
 </project>
