@@ -358,7 +358,7 @@ ul {
     opacity: 0;
     transition-property: clip-path, left, opacity;
     transition-duration: .7s;
-    transition-delay: .7s, 1.4s, 1.4s;
+    transition-delay: 0s, .7s, 0s;
     transition-timing-function: linear;
 }
 
@@ -429,7 +429,7 @@ ul {
 
 .currentSlide {
     opacity: 1;
-    clip-path: polygon(7.77% 19.18%, 91.97% 9.01%, 91.69% 99.38%, 54px 92.94%);
+    clip-path: polygon(6.93% 11.95%, 91.81% 16.24%, 91.18% 91.73%, 45px 99.89%);
     left: 5%;
 }
 
