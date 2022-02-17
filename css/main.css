@@ -483,7 +483,7 @@ ul {
 }
 
 .currentSlide {
-    opacity: 1;
+    /*! opacity: 1; */
     clip-path: polygon(14.75% 19.18%, 91.08% 8.75%, 91.39% 99.25%, 104px 90.76%);
     left: 5%;
 }
@@ -497,8 +497,8 @@ ul {
     background-color: #d0d0d0;
     opacity: 0;
     transition-property: clip-path, left, opacity, width;
-    transition-duration: .9s, .8s, .7s, .7s;
-    transition-delay: 0s, .2s, .3s, .3s;
+    transition-duration: .9s, .8s, .9s, .9s;
+    transition-delay: 0s, .2s, .1s, 0s;
     transition-timing-function: ease;
     left: 0;
 }
@@ -517,8 +517,8 @@ ul {
 
 .SB2 {
     clip-path: polygon(41.93% 10.97%, 60.07% 17.63%, 58.83% 91.46%, 41% 100.01%);
-    width: 20%;
-    left: 10%;
+    width: 25%;
+    left: 32%;
 }
 
 .SB3 {
@@ -526,36 +526,41 @@ ul {
     left: 25%;
     width: 35%;
 }
+
 .prevSlideSB {
-  opacity: 0;
-  left: 10%;
-  width: 1%;
-  clip-path: polygon(1.73% 20.79%, 100.04% -0.48%, 101.21% 100.19%, 5px 84.06%);
+    opacity: 0;
+    left: 40%;
+    width: 1%;
+    clip-path: polygon(1.73% 20.79%, 100.04% -0.48%, 101.21% 100.19%, 5px 84.06%);
+    transition-duration: .9s, .8s, .2s, .7s;
+    transition-delay: 0s, .2s, .8s, .3s;
 }
-.currentSlideSB{
+
+.currentSlideSB {
     opacity: .6;
 }
+
 .currentSlideSB.SB0 {
     clip-path: polygon(7.34% 0.34%, 106.25% 11.93%, 104.31% 89.41%, 6px 100.31%);
-    left: 30%;
+    left: 9%;
     width: 8.9%;
 }
 
 .currentSlideSB.SB1 {
     clip-path: polygon(8.37% 3.81%, 100.04% -0.48%, 101.21% 100.19%, 6px 93.74%);
-    left: 30%;
+    left: 8%;
     width: 8.9%;
 }
 
 .currentSlideSB.SB2 {
     clip-path: polygon(7.34% 0.34%, 106.25% 11.93%, 101.21% 96.17%, 6px 100.31%);
-    left: 30%;
+    left: 10%;
     width: 11.9%;
 }
 
 .currentSlideSB.SB3 {
     clip-path: polygon(3.21% 4.72%, 108.32% -0.31%, 104.31% 95.98%, 5px 93.01%);
-    left: 30%;
+    left: 10%;
     width: 8.9%;
 }
 
