@@ -47,8 +47,8 @@ shch.topSlider = function () {
         this.slide0++;
         this.slide1++;
         if (this.number > 3) this.number = 4;
-        if (this.slide0 > 4) this.slide0 = 3;
-        if (this.slide1 > 5) this.slide1 = 4;
+        if (this.slide0 > 3) this.slide0 = 3;
+        if (this.slide1 > 4) this.slide1 = 4;
         this.changeMP[this.number].classList.add('mpAct');
         this.changeTitle[this.number].classList.add('actTitle');
         this.changeAction[this.number].classList.add('actM');
