@@ -64,8 +64,17 @@ ul {
 
 .Head {
     height: 100%;
+    position: relative;
 }
-
+.Head::before{
+    content: '';
+    position: absolute;
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    opacity: .3;
+    clip-path: polygon(0 0, 100% 0, 100% 76.7%, 0 91.8%);
+}
 .headBack {
     height: 100vh;
     position: absolute;
@@ -118,6 +127,7 @@ ul {
 .firstSet {
     max-width: 1600px;
     margin: auto;
+    position: relative;
 }
 
 .firstLine {
@@ -254,6 +264,7 @@ ul {
 .secondLine {
     display: flex;
     padding-top: 2.3%;
+    position: relative;
 }
 
 .slideNavy {
@@ -347,6 +358,7 @@ ul {
     background-size: cover;
     position: relative;
     flex: 2 1 auto;
+    z-index: 0;
 }
 
 .SliderItem {
@@ -357,9 +369,9 @@ ul {
     left: 10%;
     opacity: 0;
     transition-property: clip-path, left, opacity;
-    transition-duration: .7s;
-    transition-delay: 0s, .7s, 0s;
-    transition-timing-function: linear;
+    transition-duration: .9s, 1s, .9s;
+    transition-delay: .1s, .2s, 0s;
+    transition-timing-function: ease;
 }
 
 .SI0 {
@@ -422,6 +434,22 @@ ul {
     clip-path: polygon(7.77% 19.18%, 7.71% 9.69%, 7.3% 97.68%, 54px 92.94%);
 }
 
+.currentSlide.SI1act {
+    clip-path: polygon(7.60% 18.75%, 91.47% 12.13%, 91.35% 99.38%, 43px 86.85%);
+}
+
+.currentSlide.SI21act {
+    clip-path: polygon(7.60% 18.75%, 91.47% 12.13%, 91.35% 99.38%, 43px 86.85%);
+}
+
+.currentSlide.SI3act {
+    clip-path: polygon(8.77% 26.26%, 88.44% 12.42%, 87.99% 95.97%, 46px 91.39%);
+}
+
+.currentSlide.SI4act {
+    clip-path: polygon(7.60% 18.75%, 91.47% 12.13%, 91.35% 99.38%, 43px 86.85%);
+}
+
 .prevSlide {
     opacity: 0;
     left: -20%;
@@ -433,6 +461,41 @@ ul {
     left: 5%;
 }
 
+.SliderBack {
+    top: 0;
+    width: 72%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-color: #d0d0d0;
+    opacity: .6;
+    transition-property: clip-path, left, opacity;
+    transition-duration: .9s, 1s, .9s;
+    transition-delay: .1s, .2s, 0s;
+    transition-timing-function: ease;
+    left: 0;
+}
+
+.SB1 {
+    clip-path: polygon(33.99% 8.23%, 60.07% 17.63%, 58.83% 91.46%, 203px 100.01%);
+}
+
+.SB2 {
+    clip-path: polygon(60% 17.16%, 113.09% 5.59%, 112.52% 98.84%, 339px 89.95%);
+}
+
+
+.turn {
+    clip-path: polygon(88% 27.22%, 115.77% 18.34%, 115.52% 89.20%, 517px 83.71%);
+    left: -20%;
+    opacity: .4;
+}
+
+.turn1 {
+    clip-path: polygon(34.66% 17.16%, 66.78% 33.64%, 65.54% 79.85%, 208px 83.85%);
+    left: 20%;
+    opacity: .4;
+}
 .secondDisplay {
     display: flex;
 }
