@@ -16,8 +16,14 @@ shch.topSlider = function () {
         this.changeTitle[this.number].classList.remove('actTitle');
         this.changeAction[this.number].classList.remove('actM');
         this.changeBack[this.number].classList.remove('actBack');
-        if (-1 < this.slide0 && this.slide0 < 5) this.changeSI[this.slide0].classList.remove('SI' + this.slide0 + 'act', 'prevSlide');
-        if (-1 < this.slide1 && this.slide1 < 5) this.changeSI[this.slide1].classList.remove('SI' + this.slide1 + 'act', 'currentSlide');
+        if (-1 < this.slide0 && this.slide0 < 5) {
+            this.changeSI[this.slide0].classList.remove('SI' + this.slide0 + 'act', 'prevSlide');
+            this.SliderBack[this.slide0].classList.remove('SB' + this.slide0 + 'actSB', 'prevSlideSB');
+        }
+        if (-1 < this.slide1 && this.slide1 < 5) {
+            this.changeSI[this.slide1].classList.remove('SI' + this.slide1 + 'act', 'currentSlide');
+            this.SliderBack[this.slide1].classList.remove('SB' + this.slide1 + 'actSB', 'currentSlideSB');
+        }
         this.number--;
         this.slide0--;
         this.slide1--;
@@ -28,12 +34,14 @@ shch.topSlider = function () {
         this.changeTitle[this.number].classList.add('actTitle');
         this.changeAction[this.number].classList.add('actM');
         this.changeBack[this.number].classList.add('actBack');
-        if (-1 < this.slide0 && this.slide0 < 5) this.changeSI[this.slide0].classList.add('SI' + this.slide0 + 'act', 'prevSlide');
-        if (-1 < this.slide1 && this.slide1 < 5) this.changeSI[this.slide1].classList.add('SI' + this.slide1 + 'act', 'currentSlide');
-        this.SliderBack[0].classList.toggle('turn1');
-        this.SliderBack[0].classList.toggle('turn');
-        this.SliderBack[1].classList.toggle('turn1');
-        this.SliderBack[1].classList.toggle('turn');
+        if (-1 < this.slide0 && this.slide0 < 5) {
+            this.changeSI[this.slide0].classList.add('SI' + this.slide0 + 'act', 'prevSlide');
+            this.SliderBack[this.slide0].classList.add('SB' + this.slide0 + 'actSB', 'prevSlideSB');
+        }
+        if (-1 < this.slide1 && this.slide1 < 5) {
+            this.changeSI[this.slide1].classList.add('SI' + this.slide1 + 'act', 'currentSlide');
+            this.SliderBack[this.slide1].classList.add('SB' + this.slide1 + 'actSB', 'currentSlideSB');
+        }
         this.current.textContent = this.number + 1;
     };
     this.more = function () {
@@ -41,8 +49,14 @@ shch.topSlider = function () {
         this.changeTitle[this.number].classList.remove('actTitle');
         this.changeAction[this.number].classList.remove('actM');
         this.changeBack[this.number].classList.remove('actBack');
-        if (-1 < this.slide0 && this.slide0 < 5) this.changeSI[this.slide0].classList.remove('SI' + this.slide0 + 'act', 'prevSlide');
-        if (-1 < this.slide1 && this.slide1 < 5) this.changeSI[this.slide1].classList.remove('SI' + this.slide1 + 'act', 'currentSlide');
+        if (-1 < this.slide0 && this.slide0 < 5) {
+            this.changeSI[this.slide0].classList.remove('SI' + this.slide0 + 'act', 'prevSlide');
+            this.SliderBack[this.slide0].classList.remove('SB' + this.slide0 + 'actSB', 'prevSlideSB');
+        }
+        if (-1 < this.slide1 && this.slide1 < 5) {
+            this.changeSI[this.slide1].classList.remove('SI' + this.slide1 + 'act', 'currentSlide');
+            this.SliderBack[this.slide1].classList.remove('SB' + this.slide1 + 'actSB', 'currentSlideSB');
+        }
         this.number++;
         this.slide0++;
         this.slide1++;
@@ -53,12 +67,14 @@ shch.topSlider = function () {
         this.changeTitle[this.number].classList.add('actTitle');
         this.changeAction[this.number].classList.add('actM');
         this.changeBack[this.number].classList.add('actBack');
-        if (-1 < this.slide0 && this.slide0 < 5) this.changeSI[this.slide0].classList.add('SI' + this.slide0 + 'act', 'prevSlide');
-        if (-1 < this.slide1 && this.slide1 < 5) this.changeSI[this.slide1].classList.add('SI' + this.slide1 + 'act', 'currentSlide');
-        this.SliderBack[0].classList.toggle('turn1');
-        this.SliderBack[0].classList.toggle('turn');
-        this.SliderBack[1].classList.toggle('turn1');
-        this.SliderBack[1].classList.toggle('turn');
+        if (-1 < this.slide0 && this.slide0 < 5) {
+            this.changeSI[this.slide0].classList.add('SI' + this.slide0 + 'act', 'prevSlide');
+            this.SliderBack[this.slide0].classList.add('SB' + this.slide0 + 'actSB', 'prevSlideSB');
+        }
+        if (-1 < this.slide1 && this.slide1 < 5) {
+            this.changeSI[this.slide1].classList.add('SI' + this.slide1 + 'act', 'currentSlide');
+            this.SliderBack[this.slide1].classList.add('SB' + this.slide1 + 'actSB', 'currentSlideSB');
+        }
         this.current.textContent = this.number + 1;
     };
 };
