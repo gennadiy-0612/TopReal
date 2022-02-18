@@ -394,7 +394,7 @@ ul {
 }
 
 .currentSlide {
-    /*! opacity: 1; */
+    opacity: 1;
     clip-path: polygon(14.75% 19.18%, 91.08% 8.75%, 91.39% 99.25%, 104px 90.76%);
     left: 5%;
 }
@@ -567,6 +567,7 @@ ul {
 .secondDisplay {
     display: flex;
     height: 100%;
+    position: relative;
 }
 
 .Slider2 {
@@ -596,6 +597,22 @@ ul {
     clip-path: polygon(25.94% 14.51%, 99.85% 2.68%, 100% 85.07%, 26.11% 76.35%);
     right: 13%;
     margin: auto;
+}
+
+.SliderSec {
+    height: 67.4%;
+    position: absolute;
+    z-index: -1;
+    background-color: #d0d0d0;
+    transition-property: clip-path, left, opacity, width;
+    transition-duration: .9s, .8s, .9s, .9s;
+    transition-delay: 0s, .2s, .1s, 0s;
+    transition-timing-function: ease;
+    /*! clip-path: polygon(3.54% -0.06%, 100.56% 11.8%, 100.51% 90.08%, 1px 99.78%); */
+    left: 47.1%;
+    width: 11.1%;
+    bottom: auto;
+    top: 23%;
 }
 
 .content {
@@ -634,4 +651,13 @@ ul {
     width: max-content;
     padding: 15px 22px;
     font-size: 18px;
+}
+.SliderSecBack{
+    right: 7.6%;
+    left: auto;
+    width: 22.5%;
+    clip-path: polygon(0.97% 15.81%, 100.09% 0.2%, 99.34% 99.72%, 3px 88.06%);
+    top: 30%;
+    height: 73.8%;
+    background-color: #FBF5F1;
 }

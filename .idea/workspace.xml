@@ -4,6 +4,7 @@
     <list default="true" id="6db7a532-5c8a-46cf-b205-5af3dddb6a72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +57,8 @@
       <workItem from="1644990575923" duration="18427000" />
       <workItem from="1645027005729" duration="7237000" />
       <workItem from="1645072741519" duration="15384000" />
-      <workItem from="1645105109189" duration="19757000" />
+      <workItem from="1645105109189" duration="21168000" />
+      <workItem from="1645159547847" duration="299000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1644853491401</created>
@@ -156,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645134439584</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="start">
+      <created>1645136348675</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1645136348675</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,17 +190,17 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="570" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1644861113158" />
-    <state x="465" y="121" key="CommitChangelistDialog2" timestamp="1645134438590">
+    <state x="465" y="121" key="CommitChangelistDialog2" timestamp="1645136347666">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="465" y="121" key="CommitChangelistDialog2/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1645134438590" />
+    <state x="465" y="121" key="CommitChangelistDialog2/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1645136347666" />
     <state x="620" y="266" key="FileChooserDialogImpl" timestamp="1644994563843">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="620" y="266" key="FileChooserDialogImpl/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1644994563843" />
-    <state x="536" y="257" width="737" height="606" key="find.popup" timestamp="1645125982920">
+    <state x="536" y="257" width="737" height="606" key="find.popup" timestamp="1645137460173">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="536" y="257" width="737" height="606" key="find.popup/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1645125982920" />
+    <state x="536" y="257" width="737" height="606" key="find.popup/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1645137460173" />
   </component>
 </project>
