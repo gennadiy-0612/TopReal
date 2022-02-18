@@ -18,7 +18,7 @@ ul {
     margin: 0;
 }
 
-.cursorPoint {
+.cursorPoint:hover {
     cursor: pointer;
 }
 
@@ -70,16 +70,22 @@ ul {
     background-color: #BF8341;
 }
 
-.VividBrownTrapezoid {
-    clip-path: polygon(4.49% 20.96%, 99.04% 8.14%, 99% 89.62%, 12px 79.55%);
+.weMade {
+    transition-property: background-color, color;
+    transition-duration: .2s;
+    transition-timing-function: linear;
     display: block;
+    margin: -6.3% 0 -4.2% -10%;
     text-indent: 10%;
+    clip-path: polygon(4.49% 20.96%, 99.04% 8.14%, 99% 89.62%, 12px 79.55%);
     font: 600 24px/83px 'Raleway', sans-serif;
-    margin: -6.4% 0 -6.6% -10%;
+    background: #FFFFFF url('../img/arrowRight.svg') 90% center no-repeat;
+    background-color: transparent;
+}
+
+.VividBrownTrapezoid {
     color: #ffffff;
-    background: #BF8341 url('../img/arrowRight.svg') no-repeat 90% center;
-    background-size: 28px auto;
-    max-width: 285px;
+    background-color: #BF8341;
 }
 
 .Head {
@@ -301,7 +307,6 @@ ul {
 }
 
 .slideNavySet {
-
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -313,6 +318,15 @@ ul {
 .arrowRight {
     display: flex;
     justify-content: end;
+    transition: transform .7s linear;
+}
+
+.zoom {
+    transition: transform .7s linear;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
 }
 
 .position {
@@ -365,6 +379,11 @@ ul {
     letter-spacing: .2px;
     text-align: center;
     line-height: 31px;
+    opacity: 0;
+    transition-delay: .7s;
+    transition-property: opacity;
+    transition-duration: .7s;
+    transition-timing-function: linear;
 }
 
 .actM {
@@ -380,12 +399,16 @@ ul {
     left: 15%;
 }
 
+.SliderItem.currentSlide {
+    opacity: 0;
+}
+
 .SliderItem {
-    width: 62%;
+    width: 53%;
     height: 96%;
     background-size: cover;
     position: absolute;
-    left: 10%;
+    left: 3%;
     opacity: 0;
     transition-property: clip-path, left, opacity;
     transition-duration: .9s, 1s, .9s;
@@ -394,15 +417,13 @@ ul {
 }
 
 .currentSlide {
-    opacity: 1;
-    clip-path: polygon(14.75% 19.18%, 91.08% 8.75%, 91.39% 99.25%, 104px 90.76%);
-    left: 5%;
+    /*! opacity: 1; */
+    clip-path: polygon(-5.25% 11.18%, 100% -1.25%, 100% 100%, 0 90.7%);
 }
 
 .SI0 {
     top: 0;
     background: url("../img/test1.jpg") center center no-repeat;
-    clip-path: polygon(14.75% 19.18%, 91.08% 8.75%, 91.39% 99.25%, 104px 90.76%);
 }
 
 .SI0act {
@@ -413,24 +434,24 @@ ul {
 .SI1 {
     top: 0;
     background: url("../img/test2.jpg") center center no-repeat;
-    clip-path: polygon(84.99% 17.64%, 101.51% 5.73%, 101.11% 99.26%, 568px 92.87%);
+    clip-path: polygon(84.99% 17.64%, 101.51% 5.73%, 101.11% 99.26%, 87% 92.87%);
     left: 20%;
 }
 
 .SI1act {
     left: 0;
-    clip-path: polygon(7.77% 19.18%, 7.71% 9.69%, 8.98% 97.96%, 54px 92.94%);
+    clip-path: polygon(7.77% 19.18%, 7.71% 9.69%, 8.98% 97.96%, 8.77% 92.94%);
 }
 
 .SI2 {
     top: 0;
     background: url("../img/test3.jpg") center center no-repeat;
-    clip-path: polygon(84.69% 20.98%, 99.73% 6.5%, 99.62% 98.88%, 567px 90.44%);
+    clip-path: polygon(84.69% 20.98%, 99.73% 6.5%, 99.62% 98.88%, 86% 90.44%);
     left: 20%;
 }
 
 .SI2act {
-    /*! opacity: 1; */
+    opacity: 1;
     left: 0;
     clip-path: polygon(7.77% 19.18%, 7.71% 9.69%, 7.3% 97.68%, 54px 92.94%);
 }
@@ -438,7 +459,7 @@ ul {
 .SI3 {
     top: 0;
     background: url("../img/test4.jpg") center center no-repeat;
-    clip-path: polygon(86.33% 24.95%, 101.51% 5.73%, 101.11% 99.26%, 579px 91.34%);
+    clip-path: polygon(86.33% 24.95%, 101.51% 5.73%, 101.11% 99.26%, 87% 91.34%);
     left: 20%;
 }
 
@@ -456,23 +477,23 @@ ul {
 
 .SI4act {
     left: 0;
-    clip-path: polygon(7.77% 19.18%, 7.71% 9.69%, 7.3% 97.68%, 54px 92.94%);
+    clip-path: polygon(7.77% 19.18%, 7.71% 9.69%, 7.3% 97.68%, 7.2% 92.94%);
 }
 
 .currentSlide.SI0 {
-    clip-path: polygon(14.58% 19.51%, 90.73% 8.28%, 90.91% 99.38%, 97px 90.83%);
+    clip-path: polygon(14.75% 19.18%, 91.08% 8.75%, 91.39% 99.25%, 15% 90.76%);
 }
 
 .currentSlide.SI1act {
-    clip-path: polygon(15.03% 4.13%, 91.47% 19.18%, 91.21% 97.2%, 99px 99.93%);
+    clip-path: polygon(8.03% 3.13%, 97.47% 19.18%, 97.21% 97.2%, 8% 99.93%);
 }
 
 .currentSlide.SI2act {
-    clip-path: polygon(14.88% 14.78%, 91.32% 8.28%, 91.35% 99.38%, 98px 88%);
+    clip-path: polygon(7.88% 14.78%, 97.32% 8.28%, 97.35% 99.38%, 8% 83%);
 }
 
 .currentSlide.SI3act {
-    clip-path: polygon(12.78% 0.5%, 88.45% 4.85%, 89.18% 91.49%, 86px 100.36%);
+    clip-path: polygon(12.78% 0.5%, 100% 4.85%, 100% 91.49%, 13% 99%);
 }
 
 .prevSlide {
@@ -483,8 +504,8 @@ ul {
 }
 
 .currentSlide {
-    /*! opacity: 1; */
-    clip-path: polygon(14.75% 19.18%, 91.08% 8.75%, 91.39% 99.25%, 104px 90.76%);
+    opacity: 1;
+    clip-path: polygon(14.75% 19.18%, 91.08% 8.75%, 91.39% 99.25%, 14% 90.76%);
     left: 5%;
 }
 
@@ -505,35 +526,35 @@ ul {
 
 .SB0 {
     clip-path: polygon(7.34% 0.34%, 102.57% 27.82%, 104.68% 80.65%, 6px 100.31%);
-    left: 20%;
+    left: 25%;
     width: 25%;
 }
 
 .SB1 {
     clip-path: polygon(1.73% 20.79%, 100.04% -0.48%, 101.21% 100.19%, 5px 84.06%);
     width: 26%;
-    left: 20%;
+    left: 32%;
 }
 
 .SB2 {
     clip-path: polygon(41.93% 10.97%, 60.07% 17.63%, 58.83% 91.46%, 41% 100.01%);
-    width: 25%;
-    left: 32%;
+    width: 35%;
+    left: 42%;
 }
 
 .SB3 {
     clip-path: polygon(30.53% 21.18%, 113.09% 5.59%, 112.52% 98.84%, 30% 85.57%);
-    left: 25%;
+    left: 45%;
     width: 35%;
 }
 
 .prevSlideSB {
     opacity: 0;
     left: 40%;
-    width: 1%;
-    clip-path: polygon(1.73% 20.79%, 100.04% -0.48%, 101.21% 100.19%, 5px 84.06%);
-    transition-duration: .9s, .8s, .2s, .7s;
-    transition-delay: 0s, .2s, .8s, .3s;
+    width: 0;
+    clip-path: polygon(1.73% 20.79%, 100.04% -0.48%, 101.21% 100.19%, 1% 84.06%);
+    transition-duration: .9s, .8s, .2s, .2s;
+    transition-delay: 0s, .2s, .8s, .8s;
 }
 
 .currentSlideSB {
@@ -541,26 +562,26 @@ ul {
 }
 
 .currentSlideSB.SB0 {
-    clip-path: polygon(7.34% 0.34%, 106.25% 11.93%, 104.31% 89.41%, 6px 100.31%);
-    left: 9%;
+    clip-path: polygon(7.34% 0.34%, 100.22% 11.09%, 99.62% 90.42%, 9.05% 99.3%);
+    left: 13%;
     width: 8.9%;
 }
 
 .currentSlideSB.SB1 {
-    clip-path: polygon(8.37% 3.81%, 100.04% -0.48%, 101.21% 100.19%, 6px 93.74%);
-    left: 8%;
+    clip-path: polygon(8.37% 3.81%, 100.04% -0.48%, 101.21% 100.19%, 1% 93.74%);
+    left: 12%;
     width: 8.9%;
 }
 
 .currentSlideSB.SB2 {
-    clip-path: polygon(7.34% 0.34%, 106.25% 11.93%, 101.21% 96.17%, 6px 100.31%);
-    left: 10%;
-    width: 11.9%;
+    clip-path: polygon(0% 0.34%, 100% 11.93%, 101.21% 96.17%, 0% 100%);
+    left: 14%;
+    width: 8.9%;
 }
 
 .currentSlideSB.SB3 {
-    clip-path: polygon(3.21% 4.72%, 108.32% -0.31%, 104.31% 95.98%, 5px 93.01%);
-    left: 10%;
+    clip-path: polygon(3.21% 4.72%, 108.32% -0.31%, 104.31% 95.98%, 1% 93.01%);
+    left: 15%;
     width: 8.9%;
 }
 
@@ -571,7 +592,7 @@ ul {
 }
 
 .Slider2 {
-    flex: 1 1 28.9%;
+    flex: 4 1 28.9%;
     position: relative;
     height: 100%;
 }
@@ -581,22 +602,104 @@ ul {
     height: 100%;
     background-size: cover;
     position: absolute;
+    opacity: 0;
+    transition-property: opacity, clip-path, right, width;
+    transition-duration: .7s, .7s, .7s, .7s;
+    transition-timing-function: linear;
+    transition-delay: .7s, .5s, .5s, .9s;
 }
 
 .p1 {
     top: 0;
     background: url("../img/test1.jpg") center center no-repeat;
-    clip-path: polygon(-0.12% 0%, 98.55% 15.26%, 98.54% 61.01%, -0.3% 70.72%);
-    left: 15.9%;
+    clip-path: polygon(0.1% 14.69%, 98.99% 4.43%, 98.98% 100.12%, 0.14% 90.35%);
+    right: 16%;
     margin: auto;
+    width: 28%;
+    height: 77.9%;
 }
 
 .p2 {
     top: 0;
     background: url("../img/test2.jpg") center center no-repeat;
+    clip-path: polygon(-0.21% 6.26%, 99.41% 12.2%, 98.90% 96.35%, -0.26% 99.82%);
+    right: 8%;
+    margin: auto;
+    height: 73.5%;
+    width: 8%;
+}
+
+.p3 {
+    top: 0;
+    background: url("../img/test3.jpg") center center no-repeat;
+    clip-path: polygon(0.44% 5.5%, 98.98% 0.34%, 99.57% 100.25%, 0.39% 88.94%);
+    right: 8%;
+    margin: auto;
+    width: 48.4%;
+    height: 73%;
+}
+
+.p4 {
+    top: 0;
+    background: url("../img/test4.jpg") center center no-repeat;
+    clip-path: polygon(0.01% 6.47%, 99.63% 10.47%, 100% 85.07%, -0.26% 99.36%);
+    right: 8%;
+    margin: auto;
+    width: 48%;
+    height: 74%;
+}
+
+.p5 {
+    top: 0;
+    background: url("../img/test5.jpg") center center no-repeat;
     clip-path: polygon(25.94% 14.51%, 99.85% 2.68%, 100% 85.07%, 26.11% 76.35%);
     right: 13%;
     margin: auto;
+}
+
+.photoAct {
+    opacity: 1;
+    right: 6%;
+}
+
+.photoAct.p1 {
+    clip-path: polygon(0.1% 14.69%, 98.99% 4.43%, 98.98% 100.12%, 0.14% 90.35%);
+    width: 48%;
+}
+
+.photoAct.p2 {
+    clip-path: polygon(-0.21% 6.26%, 99.41% 12.2%, 98.90% 96.35%, -0.26% 99.82%);
+    width: 48%;
+}
+
+.photoAct.p3 {
+    clip-path: polygon(-0.21% 6.26%, 99.41% 12.2%, 98.90% 96.35%, -0.26% 99.82%);
+    width: 48%;
+}
+
+.photoAct.p4 {
+    clip-path: polygon(-0.21% 6.26%, 99.41% 12.2%, 98.90% 96.35%, -0.26% 99.82%);
+    width: 48%;
+}
+
+.photoNoAct.p1 {
+}
+
+.photoNoAct.p2 {
+}
+
+.photoNoAct.p3 {
+}
+
+.photoNoAct.p4 {
+}
+
+.photoNoAct {
+    right: 75%;
+    width: 10%;
+    clip-path: polygon(34.60% 28.83%, 79.3% 7.57%, 75.2% 90.14%, 34.73% 80.96%);
+    transition-duration: .7s, .7s, .7s, .3s;
+    transition-delay: .1s, .1s, .1s, .3s;
 }
 
 .SliderSec {
@@ -605,10 +708,10 @@ ul {
     z-index: -1;
     background-color: #d0d0d0;
     transition-property: clip-path, left, opacity, width;
-    transition-duration: .9s, .8s, .9s, .9s;
-    transition-delay: 0s, .2s, .1s, 0s;
+    transition-duration: .9s, .8s, .9s, .5s;
+    transition-delay: 0s, .2s, .1s, .5s;
     transition-timing-function: ease;
-    /*! clip-path: polygon(3.54% -0.06%, 100.56% 11.8%, 100.51% 90.08%, 1px 99.78%); */
+    clip-path: polygon(3.54% -0.06%, 100.56% 11.8%, 100.51% 90.08%, 1px 99.78%);
     left: 47.1%;
     width: 11.1%;
     bottom: auto;
@@ -616,8 +719,8 @@ ul {
 }
 
 .content {
-    flex: 1 1 auto;
-    padding: 14.7% 0;
+    flex: 0.05 1 auto;
+    padding: 4.7% 0;
 }
 
 .contentH2 {
@@ -636,12 +739,13 @@ ul {
 
 .SecSliderMenu {
     margin: 3.9% 0 3.3% 0;
-    column-count: 2;
-    max-width: 630px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .SecSliderMenuLi {
     padding: 2.9% 1%;
+    width: 40%;
 }
 
 .AllList {
@@ -652,7 +756,8 @@ ul {
     padding: 15px 22px;
     font-size: 18px;
 }
-.SliderSecBack{
+
+.SliderSecBack {
     right: 7.6%;
     left: auto;
     width: 22.5%;
