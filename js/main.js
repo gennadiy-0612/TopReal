@@ -79,10 +79,42 @@ shch.topSlider = function () {
     };
 };
 
+shch.secSlide = function (s) {
+    this.changer = document.querySelectorAll(s);
+    this.changerMemo = document.querySelectorAll(s)[0];
+    this.slideSec = document.querySelectorAll('.photo');
+    this.slideSecMemo = document.querySelectorAll('.photo')[0];
+    this.slideSecMemo1 = document.querySelectorAll('.photo')[1];
+    this.changeIt = function (n) {
+        if (this.slideSecMemo == this.slideSec[n]) return;
+        this.changerMemo.classList.remove('VividBrownTrapezoid');
+        this.changer[n].classList.add('VividBrownTrapezoid');
+        this.changerMemo = this.changer[n];
+        this.slideSecMemo.classList.remove('photoAct');
+        this.slideSecMemo.classList.add('photoNoAct');
+        this.slideSecMemo1.classList.remove('photoNoAct');
+        this.slideSecMemo1 = this.slideSecMemo;
+        this.slideSec[n].classList.add('photoAct');
+        this.slideSecMemo = this.slideSec[n];
+    }
+};
+
+shch.addTo = function (s, o, f) {
+    let links = document.querySelectorAll(s);
+    let linksL = links.length;
+    this.i = 0;
+    for (; this.i < linksL; this.i++) {
+        links[this.i].addEventListener('click', f.bind(o, this.i), {passive: true});
+    }
+};
+
+
 shch.LoadFunc = function () {
     shch.goTo = new shch.topSlider();
     document.querySelector('.arrowRight').addEventListener('click', shch.goTo.more.bind(shch.goTo), {passive: true});
     document.querySelector('.arrowLeft').addEventListener('click', shch.goTo.less.bind(shch.goTo), {passive: true});
+    shch.weMade = new shch.secSlide('.weMade');
+    shch.addTo('.weMade', shch.weMade, shch.weMade.changeIt);
 };
 
 window.addEventListener('load', shch.LoadFunc);
