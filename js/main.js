@@ -85,6 +85,10 @@ shch.secSlide = function (s) {
     this.slideSec = document.querySelectorAll('.photo');
     this.slideSecMemo = document.querySelectorAll('.photo')[0];
     this.slideSecMemo1 = document.querySelectorAll('.photo')[1];
+
+    this.slideSecB = document.querySelectorAll('.photoBack');
+    this.slideSecMemoB = document.querySelectorAll('.photoBack')[0];
+    this.slideSecMemo1B = document.querySelectorAll('.photoBack')[1];
     this.changeIt = function (n) {
         if (this.slideSecMemo !== this.slideSec[n]) {
             this.changerMemo.classList.remove('VividBrownTrapezoid');
@@ -97,6 +101,13 @@ shch.secSlide = function (s) {
             this.slideSecMemo1 = this.slideSecMemo;
             this.slideSec[n].classList.add('photoAct');
             this.slideSecMemo = this.slideSec[n];
+
+            this.slideSecMemoB.classList.remove('photoActB');
+            this.slideSecMemoB.classList.add('photoNoActB');
+            this.slideSecMemo1B.classList.remove('photoNoActB');
+            this.slideSecMemo1B = this.slideSecMemoB;
+            this.slideSecB[n].classList.add('photoActB');
+            this.slideSecMemoB = this.slideSecB[n];
         }
     }
 };

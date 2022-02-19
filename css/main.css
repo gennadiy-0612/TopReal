@@ -602,6 +602,10 @@ ul {
     height: 100%;
 }
 
+.Slider2 .photo {
+    opacity: 0;
+}
+
 .photo {
     width: 72%;
     height: 100%;
@@ -721,26 +725,100 @@ ul {
     bottom: auto;
     top: 23%;
     box-shadow: 0 0 2px inset #000;
+    opacity: 0;
 }
 
 .pb1 {
-    right: -5%;
+
 }
 
 .pb2 {
-    right: 21%;
 }
 
 .pb3 {
-    right: 22%;
 }
 
 .pb4 {
-    right: 18%;
 }
 
 .pb1 {
-    right: 12%;
+}
+
+.photoActB {
+    animation-name: PAB;
+    animation-duration: 1s;
+    animation-delay: .7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    opacity: 1;
+    right: 40%;
+}
+
+@keyframes PAB {
+    0% {
+        opacity: 0;
+        right: 40%;
+    }
+    5% {
+        opacity: .4;
+    }
+    40% {
+        opacity: .6;
+        right: 50%;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: .6;
+        right: 60%;
+    }
+    80% {
+        opacity: .4;
+        right: 70%;
+    }
+    100% {
+        right: 80%;
+        opacity: 0;
+    }
+}
+
+.photoNoActB {
+    /*animation-name: PABNot;*/
+    /*animation-duration: 1s;*/
+    /*animation-delay: .7s;*/
+    /*animation-fill-mode: forwards;*/
+    /*animation-timing-function: linear;*/
+}
+
+
+@keyframes PABNot {
+    0% {
+        opacity: 0;
+        right: 40%;
+    }
+    10% {
+        opacity: .4;
+    }
+    40% {
+        opacity: .6;
+        right: 32%;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: .4;
+        right: 24%;
+    }
+    80% {
+        opacity: .6;
+        right: 20%;
+    }
+    100% {
+        opacity: 0;
+        right: 12%;
+    }
 }
 
 .pbPhoto {
@@ -838,4 +916,6 @@ ul {
     top: 30%;
     height: 73.8%;
     background-color: #FBF5F1;
+    position: absolute;
+    z-index: -1;
 }
