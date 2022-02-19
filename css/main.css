@@ -400,7 +400,7 @@ ul {
 }
 
 .SliderItem.currentSlide {
-    opacity: 0;
+    /*! opacity: 0; */
 }
 
 .SliderItem {
@@ -586,13 +586,18 @@ ul {
 }
 
 .secondDisplay {
+    height: 100%;
+    position: relative;
+}
+
+.secondDisplayIn {
     display: flex;
     height: 100%;
     position: relative;
 }
 
 .Slider2 {
-    flex: 4 1 28.9%;
+    flex: 1 1 50%;
     position: relative;
     height: 100%;
 }
@@ -604,9 +609,9 @@ ul {
     position: absolute;
     opacity: 0;
     transition-property: opacity, clip-path, right, width;
-    transition-duration: .7s, .7s, .7s, .7s;
+    transition-duration: .9s, .7s, .9s, .7s;
     transition-timing-function: linear;
-    transition-delay: .7s, .5s, .5s, .9s;
+    transition-delay: .3s, .5s, .5s, .9s;
 }
 
 .p1 {
@@ -615,7 +620,7 @@ ul {
     clip-path: polygon(0.1% 14.69%, 98.99% 4.43%, 98.98% 100.12%, 0.14% 90.35%);
     right: 16%;
     margin: auto;
-    width: 28%;
+    width: 8%;
     height: 77.9%;
 }
 
@@ -635,7 +640,7 @@ ul {
     clip-path: polygon(0.44% 5.5%, 98.98% 0.34%, 99.57% 100.25%, 0.39% 88.94%);
     right: 8%;
     margin: auto;
-    width: 48.4%;
+    width: 9%;
     height: 73%;
 }
 
@@ -643,9 +648,9 @@ ul {
     top: 0;
     background: url("../img/test4.jpg") center center no-repeat;
     clip-path: polygon(0.01% 6.47%, 99.63% 10.47%, 100% 85.07%, -0.26% 99.36%);
-    right: 8%;
+    right: 15%;
     margin: auto;
-    width: 48%;
+    width: 8%;
     height: 74%;
 }
 
@@ -695,14 +700,14 @@ ul {
 }
 
 .photoNoAct {
-    right: 75%;
+    right: 65%;
     width: 10%;
     clip-path: polygon(34.60% 28.83%, 79.3% 7.57%, 75.2% 90.14%, 34.73% 80.96%);
-    transition-duration: .7s, .7s, .7s, .3s;
-    transition-delay: .1s, .1s, .1s, .3s;
+    /*! transition-duration: .1s, .7s, .7s, .3s; */
+    /*! transition-delay: .9s, .5s, .5s, .9s; */
 }
 
-.SliderSec {
+.photoBack {
     height: 67.4%;
     position: absolute;
     z-index: -1;
@@ -712,10 +717,78 @@ ul {
     transition-delay: 0s, .2s, .1s, .5s;
     transition-timing-function: ease;
     clip-path: polygon(3.54% -0.06%, 100.56% 11.8%, 100.51% 90.08%, 1px 99.78%);
-    left: 47.1%;
     width: 11.1%;
     bottom: auto;
     top: 23%;
+    box-shadow: 0 0 2px inset #000;
+}
+
+.pb1 {
+    right: -5%;
+}
+
+.pb2 {
+    right: 21%;
+}
+
+.pb3 {
+    right: 22%;
+}
+
+.pb4 {
+    right: 18%;
+}
+
+.pb1 {
+    right: 12%;
+}
+
+.pbPhoto {
+}
+
+.pb1photo {
+    background: url("../img/test1.jpg") center center no-repeat;
+}
+
+.pb2photo {
+    background: url("../img/test2.jpg") center center no-repeat;
+}
+
+.pb3photo {
+    background: url("../img/test3.jpg") center center no-repeat;
+}
+
+.pb4photo {
+    background: url("../img/test4.jpg") center center no-repeat;
+}
+
+.pb5photo {
+    background: url("../img/test5.jpg") center center no-repeat;
+}
+
+.photoBackSet {
+    position: relative;
+    box-shadow: 0 0 2px #000;
+    height: 100%;
+    width: 100%;
+}
+
+.pbItem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+
+.photoBackFront {
+    background-color: #828282;
+    opacity: .5;
+}
+
+.photoBackBack {
+    background-color: #a1a1a1;
+
 }
 
 .content {
