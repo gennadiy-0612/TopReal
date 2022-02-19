@@ -79,8 +79,7 @@ ul {
     text-indent: 10%;
     clip-path: polygon(4.49% 20.96%, 99.04% 8.14%, 99% 89.62%, 12px 79.55%);
     font: 600 24px/83px 'Raleway', sans-serif;
-    background: #FFFFFF url('../img/arrowRight.svg') 90% center no-repeat;
-    background-color: transparent;
+    background: transparent url('../img/arrowRight.svg') 90% center no-repeat;
 }
 
 .VividBrownTrapezoid {
