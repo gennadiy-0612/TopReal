@@ -398,10 +398,6 @@ ul {
     left: 15%;
 }
 
-.SliderItem.currentSlide {
-    /*! opacity: 0; */
-}
-
 .SliderItem {
     width: 53%;
     height: 96%;
@@ -416,7 +412,6 @@ ul {
 }
 
 .currentSlide {
-    /*! opacity: 1; */
     clip-path: polygon(-5.25% 11.18%, 100% -1.25%, 100% 100%, 0 90.7%);
 }
 
@@ -601,16 +596,11 @@ ul {
     height: 100%;
 }
 
-.Slider2 .photo {
-    opacity: 0;
-}
-
 .photo {
-    width: 72%;
+    width: 0;
     height: 100%;
     background-size: cover;
     position: absolute;
-    opacity: 0;
     transition-property: opacity, clip-path, right, width;
     transition-duration: .9s, .7s, .9s, .7s;
     transition-timing-function: linear;
@@ -623,7 +613,6 @@ ul {
     clip-path: polygon(0.1% 14.69%, 98.99% 4.43%, 98.98% 100.12%, 0.14% 90.35%);
     right: 16%;
     margin: auto;
-    width: 8%;
     height: 77.9%;
 }
 
@@ -634,7 +623,6 @@ ul {
     right: 8%;
     margin: auto;
     height: 73.5%;
-    width: 8%;
 }
 
 .p3 {
@@ -643,7 +631,6 @@ ul {
     clip-path: polygon(0.44% 5.5%, 98.98% 0.34%, 99.57% 100.25%, 0.39% 88.94%);
     right: 8%;
     margin: auto;
-    width: 9%;
     height: 73%;
 }
 
@@ -653,7 +640,6 @@ ul {
     clip-path: polygon(0.01% 6.47%, 99.63% 10.47%, 100% 85.07%, -0.26% 99.36%);
     right: 15%;
     margin: auto;
-    width: 8%;
     height: 74%;
 }
 
@@ -668,6 +654,7 @@ ul {
 .photoAct {
     opacity: 1;
     right: 6%;
+    width: 48%;
 }
 
 .photoAct.p1 {
@@ -677,12 +664,10 @@ ul {
 
 .photoAct.p2 {
     clip-path: polygon(-0.21% 6.26%, 99.41% 12.2%, 98.90% 96.35%, -0.26% 99.82%);
-    width: 48%;
 }
 
 .photoAct.p3 {
     clip-path: polygon(-0.21% 6.26%, 99.41% 12.2%, 98.90% 96.35%, -0.26% 99.82%);
-    width: 48%;
 }
 
 .photoAct.p4 {
@@ -704,10 +689,8 @@ ul {
 
 .photoNoAct {
     right: 65%;
-    width: 10%;
-    clip-path: polygon(34.60% 28.83%, 79.3% 7.57%, 75.2% 90.14%, 34.73% 80.96%);
-    /*! transition-duration: .1s, .7s, .7s, .3s; */
-    /*! transition-delay: .9s, .5s, .5s, .9s; */
+    width: 0;
+    clip-path: polygon(34.60% 28.83%, 100% 7.57%, 100% 90.14%, 34.73% 80.96%);
 }
 
 .photoBack {
@@ -716,7 +699,7 @@ ul {
     z-index: -1;
     background-color: #d0d0d0;
     bottom: auto;
-    top: 23%;
+    top: 7%;
     box-shadow: 0 0 2px inset #000;
     opacity: 0;
     right: 40%;
@@ -736,28 +719,33 @@ ul {
 .pb4 {
 }
 
-.pb1 {
-}
-
 .defaultPhotoActB {
     clip-path: polygon(3.54% 0%, 4.28% 12.88%, 0.43% 85.62%, 0% 100%);
 }
 
 .photoActB {
     transition-property: opacity, clip-path, right, width;
-    transition-duration: .7s, .7s, .4s, .7s;
+    transition-duration: .7s, .1s, .7s, .7s;
     transition-timing-function: linear;
-    transition-delay: .7s, 1s, .7s, .7s;
+    transition-delay: .7s, .7s, .7s, 1s;
     opacity: 1;
-    right: 55%;
+    /*! opacity: 0; */
+    right: 45%;
     clip-path: polygon(3.54% -0.06%, 100% 12.72%, 100% 89.16%, 0 99.78%);
-    width: 40%;
+    width: 60%;
 }
 
 .defaultPhotoNoActB {
 }
 
 .photoNoActB {
+    transition-property: opacity, clip-path, right, width;
+    transition-duration: .7s, .1s, 1s, .7s;
+    transition-timing-function: linear;
+    transition-delay: 1.2s, .7s, .7s, 1s;
+    right: 15%;
+    clip-path: polygon(2.90% 4.55%, 100% 12.72%, 100% 89.16%, 1px 95.93%);
+    width: 40%;
 }
 
 .pbPhoto {
@@ -777,10 +765,6 @@ ul {
 
 .pb4photo {
     background: url("../img/test4.jpg") center center no-repeat;
-}
-
-.pb5photo {
-    background: url("../img/test5.jpg") center center no-repeat;
 }
 
 .photoBackSet {
