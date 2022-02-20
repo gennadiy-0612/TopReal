@@ -4,7 +4,6 @@
     <list default="true" id="6db7a532-5c8a-46cf-b205-5af3dddb6a72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +63,8 @@
       <workItem from="1645179894236" duration="5303000" />
       <workItem from="1645191630890" duration="3850000" />
       <workItem from="1645198718849" duration="6158000" />
-      <workItem from="1645272270749" duration="15043000" />
+      <workItem from="1645272270749" duration="17777000" />
+      <workItem from="1645335510220" duration="400000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1644853491401</created>
@@ -206,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645285859726</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="start">
+      <created>1645291246853</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1645291246853</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,14 +251,14 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="570" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1644861113158" />
-    <state x="465" y="121" key="CommitChangelistDialog2" timestamp="1645285858715">
+    <state x="465" y="121" key="CommitChangelistDialog2" timestamp="1645291245781">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="465" y="121" key="CommitChangelistDialog2/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1645285858715" />
-    <state x="92" y="92" width="1496" height="866" key="DiffContextDialog" timestamp="1645160180500">
+    <state x="465" y="121" key="CommitChangelistDialog2/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1645291245781" />
+    <state x="92" y="92" width="1496" height="866" key="DiffContextDialog" timestamp="1645297069216">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="92" y="92" width="1496" height="866" key="DiffContextDialog/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1645160180500" />
+    <state x="92" y="92" width="1496" height="866" key="DiffContextDialog/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1645297069216" />
     <state x="620" y="266" key="FileChooserDialogImpl" timestamp="1644994563843">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
