@@ -85,21 +85,28 @@ shch.secSlide = function (s) {
     this.slideSec = document.querySelectorAll('.photo');
     this.slideSecMemo = document.querySelectorAll('.photo')[0];
     this.slideSecMemo1 = document.querySelectorAll('.photo')[1];
+    this.memo0 = 0;
+    this.memo1 = 1;
 
     this.slideSecB = document.querySelectorAll('.photoBack');
     this.slideSecMemoB = document.querySelectorAll('.photoBack')[0];
     this.slideSecMemo1B = document.querySelectorAll('.photoBack')[1];
+
+    this.memo0 = 0;
+    this.memo1 = 1;
     this.changeIt = function (n) {
         if (this.slideSecMemo !== this.slideSec[n]) {
             this.changerMemo.classList.remove('VividBrownTrapezoid');
             this.changer[n].classList.add('VividBrownTrapezoid');
             this.changerMemo = this.changer[n];
 
-            this.slideSecMemo.classList.remove('photoAct');
-            this.slideSecMemo.classList.add('photoNoAct');
-            this.slideSecMemo1.classList.remove('photoNoAct');
+            this.slideSecMemo.classList.remove('photoAct',  'PA' + this.memo0);
+            this.slideSecMemo.classList.add('photoNoAct',  'PNA' + this.memo0);
+            this.slideSecMemo1.classList.remove('photoNoAct',  'PNA' + this.memo1);
             this.slideSecMemo1 = this.slideSecMemo;
-            this.slideSec[n].classList.add('photoAct');
+            this.memo1 = this.memo0;
+            this.memo0 = n;
+            this.slideSec[n].classList.add('photoAct', 'PA' + this.memo0);
             this.slideSecMemo = this.slideSec[n];
 
             this.slideSecMemoB.classList.remove('photoActB');
