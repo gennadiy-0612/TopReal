@@ -405,22 +405,10 @@ ul {
     position: absolute;
     left: 3%;
     opacity: 0;
-    transition-property: clip-path;
-    transition-duration: 837.9746835443038ms;
-    transition-delay: 120.25316455696202ms;
-    /*transition-timing-function: ease;*/
-    /*transition-property: left;*/
-    /*transition-duration: 1s;*/
-    /*transition-delay: .2s;*/
-    /*transition-timing-function: ease;*/
-    /*transition-property: opacity;*/
-    /*transition-duration: .9s;*/
-    /*transition-delay: 0s;*/
-    /*transition-timing-function: ease;*/
-    /*transition-property: opacity;*/
-    /*transition-duration: .9s;*/
-    /*transition-delay: 0s;*/
-    /*transition-timing-function: ease;*/
+    transition-property: clip-path, left, opacity;
+    transition-duration: .9s, 662ms, .9s;
+    transition-delay: .1s, 376ms, 0s;
+    transition-timing-function: ease;
 }
 
 .SI0 {
@@ -429,7 +417,6 @@ ul {
 }
 
 .SI0act {
-    left: 0;
     clip-path: polygon(7.77% 19.18%, 7.71% 9.69%, 7.3% 97.68%, 7.3% 92.94%);
 }
 
@@ -437,11 +424,10 @@ ul {
     top: 0;
     background: url("../img/test2.jpg") center center no-repeat;
     clip-path: polygon(84.99% 17.64%, 101.51% 5.73%, 101.11% 99.26%, 87% 92.87%);
-    left: 20%;
+    left: 60%;
 }
 
 .SI1act {
-    left: 0;
     clip-path: polygon(7.8% 19.18%, 7.71% 9.69%, 8.98% 97.96%, 8.9% 92.94%);
 }
 
@@ -449,12 +435,11 @@ ul {
     top: 0;
     background: url("../img/test3.jpg") center center no-repeat;
     clip-path: polygon(84.69% 20.98%, 99.73% 6.5%, 99.62% 98.88%, 86% 90.44%);
-    left: 20%;
+    left: 60%;
 }
 
 .SI2act {
     opacity: 1;
-    left: 0;
     clip-path: polygon(7.5% 19.18%, 7.71% 9.69%, 7.3% 97.68%, 7.4% 92.94%);
 }
 
@@ -462,11 +447,10 @@ ul {
     top: 0;
     background: url("../img/test4.jpg") center center no-repeat;
     clip-path: polygon(86.33% 24.95%, 101.51% 5.73%, 101.11% 99.26%, 87% 91.34%);
-    left: 20%;
+    left: 60%;
 }
 
 .SI3act {
-    left: 0;
     clip-path: polygon(7.77% 19.18%, 7.71% 9.69%, 7.3% 97.68%, 7.3% 92.94%);
 }
 
@@ -474,49 +458,18 @@ ul {
     top: 0;
     background: url("../img/test5.jpg") center center no-repeat;
     clip-path: polygon(78.46% 19.31%, 101.51% 5.73%, 101.11% 99.26%, 532px 90.82%);
-    left: 20%;
+    left: 60%;
 }
 
 .SI4act {
-    left: 0;
     clip-path: polygon(7.77% 19.18%, 7.71% 9.69%, 7.3% 97.68%, 7.2% 92.94%);
 }
 
-.currentSlide.SI0 {
-    clip-path: polygon(14.75% 19.18%, 91.08% 8.75%, 91.39% 99.25%, 15% 90.76%);
-}
-
-.currentSlide.SI1act {
-    clip-path: polygon(8.03% 3.13%, 97.47% 19.18%, 97.21% 97.2%, 8% 99.93%);
-}
-
-.currentSlide.SI2act {
-    clip-path: polygon(7.88% 14.78%, 97.32% 8.28%, 97.35% 99.38%, 8% 83%);
-}
-
-.currentSlide.SI3act {
-    clip-path: polygon(12.78% 0.5%, 100% 4.85%, 100% 91.49%, 13% 99%);
-}
-
 .prevSlide {
-    opacity: 1;
+    opacity: 0;
     left: -5%;
-    transition-property: clip-path;
-    transition-duration: 432.91139240506334ms;
-    transition-delay: 0ms;
-    /*transition-timing-function: ease;*/
-    /*transition-property: left;*/
-    /*transition-duration: 1s;*/
-    /*transition-delay: .2s;*/
-    /*transition-timing-function: ease;*/
-    /*transition-property: opacity;*/
-    /*transition-duration: .9s;*/
-    /*transition-delay: 0s;*/
-    /*transition-timing-function: ease;*/
-    /*transition-property: opacity;*/
-    /*transition-duration: .9s;*/
-    /*transition-delay: 0s;*/
-    /*transition-timing-function: ease;*/
+    transition-duration: 566ms, 1s, .2s;
+    transition-delay: 0ms, .2s, .7s;
 }
 
 .currentSlide {
@@ -524,7 +477,11 @@ ul {
     clip-path: polygon(14.75% 19.18%, 91.08% 8.75%, 91.39% 99.25%, 14% 90.76%);
     left: 5%;
 }
-
+.SI0.SI0act{clip-path: polygon(14.75% 19.18%, 91.08% 8.75%, 91.39% 99.25%, 14% 90.76%);}
+.SI1.SI1act{clip-path: polygon(14.75% 19.18%, 91.08% 8.75%, 91.39% 99.25%, 14% 90.76%);}
+.SI2.SI2act{clip-path: polygon(14.75% 19.18%, 91.08% 8.75%, 91.39% 99.25%, 14% 90.76%);}
+.SI3.SI3act{clip-path: polygon(8% 14.3%, 96.98% 7.75%, 97.39% 99.25%, 8% 81.76%);}
+.SI4.SI4act{}
 .SliderBack {
     bottom: 0;
     width: 70%;
@@ -534,8 +491,8 @@ ul {
     background-color: #d0d0d0;
     opacity: 0;
     transition-property: clip-path, left, opacity, width;
-    transition-duration: .7s, .8s, .9s, .9s;
-    transition-delay: .2s, .2s, .1s, .1s;
+    transition-duration: .9s, .8s, .9s, .9s;
+    transition-delay: 0s, .2s, .1s, 0s;
     transition-timing-function: ease;
     left: 0;
 }
@@ -569,8 +526,8 @@ ul {
     left: 40%;
     width: 0;
     clip-path: polygon(1.73% 20.79%, 100.04% -0.48%, 101.21% 100.19%, 1% 84.06%);
-    transition-duration: .4s, .8s, .2s, .2s;
-    transition-delay: .5s, .2s, .8s, .8s;
+    transition-duration: .9s, .8s, .2s, .2s;
+    transition-delay: 0s, .2s, .8s, .8s;
 }
 
 .currentSlideSB {
@@ -617,11 +574,9 @@ ul {
     position: relative;
     height: 100%;
 }
-
-.Slider2 .photo {
+.Slider2 .photo{
     opacity: 0;
 }
-
 .photo {
     width: 0;
     height: 100%;
