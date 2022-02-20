@@ -405,14 +405,22 @@ ul {
     position: absolute;
     left: 3%;
     opacity: 0;
-    transition-property: clip-path, left, opacity;
-    transition-duration: .9s, 1s, .9s;
-    transition-delay: .1s, .2s, 0s;
-    transition-timing-function: ease;
-}
-
-.currentSlide {
-    clip-path: polygon(-5.25% 11.18%, 100% -1.25%, 100% 100%, 0 90.7%);
+    transition-property: clip-path;
+    transition-duration: 837.9746835443038ms;
+    transition-delay: 120.25316455696202ms;
+    /*transition-timing-function: ease;*/
+    /*transition-property: left;*/
+    /*transition-duration: 1s;*/
+    /*transition-delay: .2s;*/
+    /*transition-timing-function: ease;*/
+    /*transition-property: opacity;*/
+    /*transition-duration: .9s;*/
+    /*transition-delay: 0s;*/
+    /*transition-timing-function: ease;*/
+    /*transition-property: opacity;*/
+    /*transition-duration: .9s;*/
+    /*transition-delay: 0s;*/
+    /*transition-timing-function: ease;*/
 }
 
 .SI0 {
@@ -491,10 +499,24 @@ ul {
 }
 
 .prevSlide {
-    opacity: 0;
+    opacity: 1;
     left: -5%;
-    transition-duration: .9s, 1s, .2s;
-    transition-delay: .1s, .2s, .7s;
+    transition-property: clip-path;
+    transition-duration: 432.91139240506334ms;
+    transition-delay: 0ms;
+    /*transition-timing-function: ease;*/
+    /*transition-property: left;*/
+    /*transition-duration: 1s;*/
+    /*transition-delay: .2s;*/
+    /*transition-timing-function: ease;*/
+    /*transition-property: opacity;*/
+    /*transition-duration: .9s;*/
+    /*transition-delay: 0s;*/
+    /*transition-timing-function: ease;*/
+    /*transition-property: opacity;*/
+    /*transition-duration: .9s;*/
+    /*transition-delay: 0s;*/
+    /*transition-timing-function: ease;*/
 }
 
 .currentSlide {
@@ -512,8 +534,8 @@ ul {
     background-color: #d0d0d0;
     opacity: 0;
     transition-property: clip-path, left, opacity, width;
-    transition-duration: .9s, .8s, .9s, .9s;
-    transition-delay: 0s, .2s, .1s, 0s;
+    transition-duration: .7s, .8s, .9s, .9s;
+    transition-delay: .2s, .2s, .1s, .1s;
     transition-timing-function: ease;
     left: 0;
 }
@@ -547,8 +569,8 @@ ul {
     left: 40%;
     width: 0;
     clip-path: polygon(1.73% 20.79%, 100.04% -0.48%, 101.21% 100.19%, 1% 84.06%);
-    transition-duration: .9s, .8s, .2s, .2s;
-    transition-delay: 0s, .2s, .8s, .8s;
+    transition-duration: .4s, .8s, .2s, .2s;
+    transition-delay: .5s, .2s, .8s, .8s;
 }
 
 .currentSlideSB {
@@ -595,9 +617,11 @@ ul {
     position: relative;
     height: 100%;
 }
-.Slider2 .photo{
+
+.Slider2 .photo {
     opacity: 0;
 }
+
 .photo {
     width: 0;
     height: 100%;
