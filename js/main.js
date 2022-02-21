@@ -100,9 +100,9 @@ shch.secSlide = function (s) {
             this.changer[n].classList.add('VividBrownTrapezoid');
             this.changerMemo = this.changer[n];
 
-            this.slideSecMemo.classList.remove('photoAct',  'PA' + this.memo0);
-            this.slideSecMemo.classList.add('photoNoAct',  'PNA' + this.memo0);
-            this.slideSecMemo1.classList.remove('photoNoAct',  'PNA' + this.memo1);
+            this.slideSecMemo.classList.remove('photoAct', 'PA' + this.memo0);
+            this.slideSecMemo.classList.add('photoNoAct', 'PNA' + this.memo0);
+            this.slideSecMemo1.classList.remove('photoNoAct', 'PNA' + this.memo1);
             this.slideSecMemo1 = this.slideSecMemo;
             this.memo1 = this.memo0;
             this.memo0 = n;
@@ -118,7 +118,28 @@ shch.secSlide = function (s) {
         }
     }
 };
+shch.addDetect = function (inter) {
+    this.checkVision = function (init) {
+        const options = {
+            rootMargins: '50vh 0',
+            threshold: [inter]
+        };
 
+        function vdHandler(els) {
+            els.forEach((data) => {
+                if (data.intersectionRatio > inter) {
+                    data.target.classList.add(init.animationName);
+                }
+            });
+        }
+
+        const vd = new IntersectionObserver(vdHandler, options);
+        const cImgs = document.querySelectorAll(init.selector);
+        cImgs.forEach((el) => {
+            vd.observe(el);
+        });
+    }
+};
 shch.addTo = function (s, o, f) {
     let links = document.querySelectorAll(s);
     let linksL = links.length;
@@ -127,7 +148,12 @@ shch.addTo = function (s, o, f) {
         links[this.i].addEventListener('click', f.bind(o, this.i), {passive: true});
     }
 };
-
+shch.watch = {
+    screenS2: {
+        selector: '.SlideBack',
+        animationName: 'SlideBackAnim'
+    }
+};
 
 shch.LoadFunc = function () {
     shch.goTo = new shch.topSlider();
@@ -135,6 +161,12 @@ shch.LoadFunc = function () {
     document.querySelector('.arrowLeft').addEventListener('click', shch.goTo.less.bind(shch.goTo), {passive: true});
     shch.weMade = new shch.secSlide('.weMade');
     shch.addTo('.weMade', shch.weMade, shch.weMade.changeIt);
+
+    shch.watchS1 = new shch.addDetect(.5);
+    shch.watchS1.checkVision(shch.watch.screenS1);
+
+    shch.watchS2 = new shch.addDetect(.5);
+    shch.watchS2.checkVision(shch.watch.screenS2);
 };
 
 window.addEventListener('load', shch.LoadFunc);
