@@ -162,9 +162,6 @@ shch.LoadFunc = function () {
     shch.weMade = new shch.secSlide('.weMade');
     shch.addTo('.weMade', shch.weMade, shch.weMade.changeIt);
 
-    shch.watchS1 = new shch.addDetect(.5);
-    shch.watchS1.checkVision(shch.watch.screenS1);
-
     shch.watchS2 = new shch.addDetect(.5);
     shch.watchS2.checkVision(shch.watch.screenS2);
 };

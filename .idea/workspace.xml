@@ -4,20 +4,7 @@
     <list default="true" id="6db7a532-5c8a-46cf-b205-5af3dddb6a72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/FL.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/arrowDownIcon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/arrowLeft.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/fbIcon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/globusIcon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/instarammIcon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/rect.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/telegramIcon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/test2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/topSlide1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/viberIcon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/youtubeIcon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +68,7 @@
       <workItem from="1645335510220" duration="3625000" />
       <workItem from="1645352508332" duration="16859000" />
       <workItem from="1645377299489" duration="3908000" />
-      <workItem from="1645418003395" duration="16602000" />
+      <workItem from="1645418003395" duration="22578000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1644853491401</created>
@@ -300,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645440622956</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="start">
+      <created>1645447359074</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1645447359074</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,10 +332,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="570" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1645441888343" />
-    <state x="465" y="121" key="CommitChangelistDialog2" timestamp="1645440621979">
+    <state x="465" y="121" key="CommitChangelistDialog2" timestamp="1645447357776">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="465" y="121" key="CommitChangelistDialog2/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1645440621979" />
+    <state x="465" y="121" key="CommitChangelistDialog2/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1645447357776" />
     <state x="100" y="61" width="1496" height="866" key="DiffContextDialog" timestamp="1645365838624">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -354,9 +348,13 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="710" y="418" key="Github.ShareDialog/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1645440724301" />
-    <state x="536" y="257" width="737" height="606" key="find.popup" timestamp="1645440441311">
+    <state x="432" y="246" key="Vcs.Push.Dialog.v2" timestamp="1645447362213">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="536" y="257" width="737" height="606" key="find.popup/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1645440441311" />
+    <state x="432" y="246" key="Vcs.Push.Dialog.v2/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1645447362213" />
+    <state x="536" y="257" width="737" height="606" key="find.popup" timestamp="1645454615806">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="536" y="257" width="737" height="606" key="find.popup/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1645454615806" />
   </component>
 </project>
