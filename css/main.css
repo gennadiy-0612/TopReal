@@ -406,8 +406,8 @@ ul {
     left: 3%;
     opacity: 0;
     transition-property: clip-path, left, opacity, width;
-    transition-duration: .4s, 662ms, .9s, 400ms;
-    transition-delay: .2s, 0s, 0s, 100ms;
+    transition-duration: .4s, 662ms, 361ms, 400ms;
+    transition-delay: .2s, 0s, .200ms, 100ms;
     transition-timing-function: ease;
 }
 
@@ -439,7 +439,6 @@ ul {
 }
 
 .SI2act {
-    opacity: 1;
     clip-path: polygon(7.5% 19.18%, 7.71% 9.69%, 7.3% 97.68%, 7.4% 92.94%);
 }
 
@@ -586,17 +585,17 @@ ul {
     height: 100%;
     background-size: cover;
     position: absolute;
+    right: 6%;
     transition-property: opacity, clip-path, right, width;
     transition-duration: .9s, .7s, .9s, .9s;
     transition-timing-function: linear;
-    transition-delay: .3s, .5s, .5s, .5s;
+    transition-delay: .3s, .2s, .5s, .5s;
 }
 
 .p0 {
     top: 0;
     background: url("../img/test1.jpg") center center no-repeat;
     clip-path: polygon(0.1% 14.69%, 98.99% 4.43%, 98.98% 100.12%, 0.14% 90.35%);
-    right: 16%;
     margin: auto;
     height: 77.9%;
 }
@@ -605,7 +604,6 @@ ul {
     top: 0;
     background: url("../img/test2.jpg") center center no-repeat;
     clip-path: polygon(-0.21% 6.26%, 99.41% 12.2%, 98.90% 96.35%, -0.26% 99.82%);
-    right: 8%;
     margin: auto;
     height: 73.5%;
 }
@@ -614,7 +612,6 @@ ul {
     top: 0;
     background: url("../img/test3.jpg") center center no-repeat;
     clip-path: polygon(0.44% 5.5%, 98.98% 0.34%, 99.57% 100.25%, 0.39% 88.94%);
-    right: 8%;
     margin: auto;
     height: 73%;
 }
@@ -623,7 +620,6 @@ ul {
     top: 0;
     background: url("../img/test4.jpg") center center no-repeat;
     clip-path: polygon(0.01% 6.47%, 99.63% 10.47%, 100% 85.07%, -0.26% 99.36%);
-    right: 15%;
     margin: auto;
     height: 74%;
 }
@@ -640,8 +636,11 @@ ul {
 
 .photoNoAct {
     right: 75%;
+    opacity: 0;
     width: 0;
     clip-path: polygon(34.60% 28.83%, 100% 7.57%, 100% 90.14%, 34.73% 80.96%);
+    transition-duration: .9s, .7s, 916ms, 417ms;
+    transition-delay: .3s, .2s, 0s, .5s;
 }
 
 .photoBack {
@@ -692,9 +691,9 @@ ul {
     transition-duration: .7s, .1s, 1s, .7s, .7s;
     transition-timing-function: linear;
     transition-delay: 1.2s, .7s, 1.5s, 1s, .7s;
-    right: 40%;
+    right: 65%;
     clip-path: polygon(2.90% 4.55%, 100% 12.72%, 100% 89.16%, 1px 95.93%);
-    width: 40%;
+    width: 60%;
     transform: rotateY(70deg);
 }
 
