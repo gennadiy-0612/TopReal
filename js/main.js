@@ -100,17 +100,6 @@ shch.secSlide = function (s) {
             this.slideSecMemo.classList.remove('photoAct', 'PA' + this.memo0);
             this.slideSecMemo.classList.add('photoNoAct', 'PNA' + this.memo0);
             this.slideSecMemo1.classList.remove('photoNoAct', 'PNA' + this.memo1);
-            if (this.memo1 === n) {
-                this.slideSecMemo.classList.remove('equal');
-                this.slideSecMemo.classList.add('equalNA');
-                this.slideSecMemo1.classList.remove('equalNA');
-                this.slideSecMemo1.classList.add('equal');
-            } else {
-                this.slideSecMemo.classList.remove('equal');
-                this.slideSecMemo.classList.remove('equalNA');
-                this.slideSecMemo1.classList.remove('equal');
-                this.slideSecMemo1.classList.remove('equalNA');
-            }
             this.slideSecMemo1 = this.slideSecMemo;
             this.memo1 = this.memo0;
             this.memo0 = n;
