@@ -155,14 +155,16 @@ ul {
 
 .firstSet {
     width: 100%;
-    background: linear-gradient(#00000059,#00000059,#00000059,transparent);
+    background: linear-gradient(#00000059, #00000059, #00000059, transparent);
     height: 19%;
 }
-.firstOut{
+
+.firstOut {
     max-width: 1600px;
     margin: auto;
     position: relative;
 }
+
 .firstLine {
     display: flex;
     justify-content: space-between;
@@ -528,7 +530,7 @@ ul {
 }
 
 .SB3 {
-   clip-path: polygon(7.5% 19.18%, 7.71% 9.69%, 7.3% 97.68%, 7.4% 92.94%);
+    clip-path: polygon(7.5% 19.18%, 7.71% 9.69%, 7.3% 97.68%, 7.4% 92.94%);
     width: 35%;
 }
 
@@ -562,10 +564,26 @@ ul {
     /*! clip-path: polygon(2.01% 5.99%, 90% -0.48%, 90% 92.79%, 1.28% 90.28%); */
 }
 
-.prevSlideSB.SB0{polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);clip-path: polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);}
-.prevSlideSB.SB1{polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);clip-path: polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);}
-.prevSlideSB.SB2{polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);clip-path: polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);}
-.prevSlideSB.SB3{polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);clip-path: polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);}
+.prevSlideSB.SB0 {
+polygon(13 % 4 %, 40 % 0 %, 40 % 93 %, 13 % 86 %);
+    clip-path: polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);
+}
+
+.prevSlideSB.SB1 {
+polygon(13 % 4 %, 40 % 0 %, 40 % 93 %, 13 % 86 %);
+    clip-path: polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);
+}
+
+.prevSlideSB.SB2 {
+polygon(13 % 4 %, 40 % 0 %, 40 % 93 %, 13 % 86 %);
+    clip-path: polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);
+}
+
+.prevSlideSB.SB3 {
+polygon(13 % 4 %, 40 % 0 %, 40 % 93 %, 13 % 86 %);
+    clip-path: polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);
+}
+
 .secondDisplay {
     height: 100%;
     position: relative;
@@ -588,7 +606,7 @@ ul {
     height: 100%;
     background-size: cover;
     position: absolute;
-    left: 5%;
+    left: 95%;
     transition-property: opacity, clip-path, left, width;
     transition-duration: .5s, .5s, .5s, .5s;
     transition-timing-function: linear;
@@ -622,14 +640,38 @@ ul {
     margin: auto;
     height: 74%;
 }
-.PA0 {clip-path: polygon(8% 19.18%, 8% 9.69%, 8% 97.96%, 8% 92.94%);}
-.PA1 {clip-path: polygon(7.8% 19.18%, 7.8% 9.69%, 8.9% 97.96%, 8.9% 92.94%);}
-.PA2 {clip-path: polygon(7.8% 19.18%, 7.8% 9.69%, 8.9% 97.96%, 8.9% 92.94%);}
-.PA2 {clip-path: polygon(7.8% 19.18%, 7.8% 9.69%, 8.9% 97.96%, 8.9% 92.94%);}
-.photoAct.p0{clip-path: polygon(0.1% 14.69%, 98.99% 4.43%, 98.98% 100.12%, 0.14% 90.35%);}
-.photoAct.p1{clip-path: polygon(-0.21% 6.26%, 99.41% 12.2%, 98.90% 96.35%, -0.26% 99.82%);}
-.photoAct.p2{clip-path: polygon(0.44% 5.5%, 98.98% 0.34%, 99.57% 100.25%, 0.39% 88.94%);}
-.photoAct.p3{/*! clip-path: polygon(0.01% 6.47%, 99.63% 10.47%, 100% 85.07%, -0.26% 99.36%); */}
+
+.PA0 {
+    clip-path: polygon(8% 19.18%, 8% 9.69%, 8% 97.96%, 8% 92.94%);
+}
+
+.PA1 {
+    clip-path: polygon(7.8% 19.18%, 7.8% 9.69%, 8.9% 97.96%, 8.9% 92.94%);
+}
+
+.PA2 {
+    clip-path: polygon(7.8% 19.18%, 7.8% 9.69%, 8.9% 97.96%, 8.9% 92.94%);
+}
+
+.PA2 {
+    clip-path: polygon(7.8% 19.18%, 7.8% 9.69%, 8.9% 97.96%, 8.9% 92.94%);
+}
+
+.photoAct.p0 {
+    clip-path: polygon(0.1% 14.69%, 98.99% 4.43%, 98.98% 100.12%, 0.14% 90.35%);
+}
+
+.photoAct.p1 {
+    clip-path: polygon(0% 6.26%, 99.41% 12.2%, 98.90% 96.35%, 0% 99.82%);
+}
+
+.photoAct.p2 {
+    clip-path: polygon(0.44% 5.5%, 98.98% 0.34%, 99.57% 100.25%, 0.39% 88.94%);
+}
+
+.photoAct.p3 {
+    clip-path: polygon(0.01% 6.47%, 99.63% 10.47%, 100% 85.07%, -0.26% 99.36%);
+}
 
 .photoAct {
     /*! opacity: 1; */
@@ -637,19 +679,16 @@ ul {
     /*! display: none; */
     border: 2px solid #000;
 }
-
+.equal{left: 40%;width: 60%;/*! opacity: 0; */}
 .photoNoAct {
-    left: 0%;
+    left: 5%;
     /*! opacity: 0; */
     /*! width: 0; */
     /*! clip-path: polygon(7.8% 19.18%, 7.71% 9.69%, 8.98% 97.96%, 8.9% 92.94%); */
     /*! transition-duration: .9s, .7s, 916ms, 417ms; */
     /*! transition-delay: .7s, .7s, .7s, .7s; */
 }
-.PNA0{}
-.PNA1{}
-.PNA2{}
-.PNA3{}
+
 .photoBack {
     height: 67.4%;
     position: absolute;
