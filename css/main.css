@@ -529,7 +529,7 @@ ul {
 }
 
 .SB3 {
-    clip-path: polygon(30.53% 21.18%, 113.09% 5.59%, 112.52% 98.84%, 30% 85.57%);
+   clip-path: polygon(7.5% 19.18%, 7.71% 9.69%, 7.3% 97.68%, 7.4% 92.94%);
     width: 35%;
 }
 
@@ -560,7 +560,7 @@ ul {
 }
 
 .currentSlideSB.SB3 {
-    clip-path: polygon(2.01% 5.99%, 90% -0.48%, 90% 92.79%, 1.28% 90.28%);
+    /*! clip-path: polygon(2.01% 5.99%, 90% -0.48%, 90% 92.79%, 1.28% 90.28%); */
 }
 
 .prevSlideSB.SB0{polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);clip-path: polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);}
@@ -585,67 +585,75 @@ ul {
 }
 
 .photo {
-    width: 0;
+    width: 48%;
     height: 100%;
     background-size: cover;
     position: absolute;
-    right: 13%;
-    transition-property: opacity, clip-path, right, width;
+    left: 5%;
+    transition-property: opacity, clip-path, left, width;
     transition-duration: 1.3s, 1.2s, 1.1s, 1100ms;
     transition-timing-function: linear;
-    transition-delay: .8s, .7s, 1s, 587ms;
+    transition-delay: .7s, .7s, .7s, .7s;
+    clip-path: polygon(7.8% 19.18%, 7.71% 9.69%, 8.98% 97.96%, 8.9% 92.94%);
 }
 
 .p0 {
     top: 0;
     background: url("../img/test1.jpg") center center no-repeat;
-    clip-path: polygon(0.1% 14.69%, 98.99% 4.43%, 98.98% 100.12%, 0.14% 90.35%);
     margin: auto;
     height: 77.9%;
+    left: 60%;
 }
 
 .p1 {
     top: 0;
     background: url("../img/test2.jpg") center center no-repeat;
-    clip-path: polygon(-0.21% 6.26%, 99.41% 12.2%, 98.90% 96.35%, -0.26% 99.82%);
     margin: auto;
     height: 73.5%;
+    left: 60%;
 }
 
 .p2 {
     top: 0;
     background: url("../img/test3.jpg") center center no-repeat;
-    clip-path: polygon(0.44% 5.5%, 98.98% 0.34%, 99.57% 100.25%, 0.39% 88.94%);
     margin: auto;
     height: 73%;
+    left: 60%;
 }
 
 .p3 {
     top: 0;
     background: url("../img/test4.jpg") center center no-repeat;
-    clip-path: polygon(0.01% 6.47%, 99.63% 10.47%, 100% 85.07%, -0.26% 99.36%);
     margin: auto;
     height: 74%;
+    left: 60%;
 }
+.activePhoto0 {clip-path: polygon(7.8% 19.18%, 7.8% 9.69%, 8.9% 97.96%, 8.9% 92.94%);}
+.activePhoto1 {clip-path: polygon(7.8% 19.18%, 7.8% 9.69%, 8.9% 97.96%, 8.9% 92.94%);}
+.activePhoto2 {clip-path: ppolygon(7.8% 19.18%, 7.8% 9.69%, 8.9% 97.96%, 8.9% 92.94%);}
+.activePhoto3 {clip-path: polygon(7.8% 19.18%, 7.8% 9.69%, 8.9% 97.96%, 8.9% 92.94%);left: 90%;}
+.photoAct.p0{clip-path: polygon(0.1% 14.69%, 98.99% 4.43%, 98.98% 100.12%, 0.14% 90.35%);}
+.photoAct.p1{clip-path: polygon(-0.21% 6.26%, 99.41% 12.2%, 98.90% 96.35%, -0.26% 99.82%);}
+.photoAct.p2{clip-path: polygon(0.44% 5.5%, 98.98% 0.34%, 99.57% 100.25%, 0.39% 88.94%);}
+.photoAct.p3{clip-path: polygon(0.01% 6.47%, 99.63% 10.47%, 100% 85.07%, -0.26% 99.36%);}
 
 .photoAct {
     opacity: 1;
-    right: 13%;
-    width: 48%;
-}
-
-.photoAct.p0 {
-    width: 48%;
+    left: 10%;
 }
 
 .photoNoAct {
-    right: 95%;
+    left: 0%;
     opacity: 0;
-    width: 0;
-    clip-path: polygon(34.60% 28.83%, 100% 7.57%, 100% 90.14%, 34.73% 80.96%);
-    transition-duration: .9s, .7s, 916ms, 417ms;
-    transition-delay: .3s, .2s, 0s, .5s;
+    /*! width: 0; */
+    /*! clip-path: polygon(7.8% 19.18%, 7.71% 9.69%, 8.98% 97.96%, 8.9% 92.94%); */
+    /*! transition-duration: .9s, .7s, 916ms, 417ms; */
+    /*! transition-delay: .7s, .7s, .7s, .7s; */
 }
+.PNA0{}
+.PNA1{}
+.PNA2{}
+.PNA3{}
 .photoBack {
     height: 67.4%;
     position: absolute;
@@ -655,10 +663,10 @@ ul {
     top: 7%;
     box-shadow: 0 0 2px inset #000;
     opacity: 0;
-    clip-path: polygon(-0.21% 6.26%, 99.41% 12.2%, 98.90% 96.35%, -0.26% 99.82%);
-    right: 40%;
+    left: 40%;
     width: 11.1%;
     transform: rotateY(70deg);
+    opacity: 0 !important;
 }
 
 .photoActB.pb0 {
@@ -678,26 +686,26 @@ ul {
 }
 
 .photoActB {
-    transition-property: opacity, clip-path, right, width, transform;
+    transition-property: opacity, clip-path, left, width, transform;
     transition-duration: .2s, 0.8s, 0.7s, .3s, .4s;
     transition-timing-function: linear;
     transition-delay: .7s, 1.1s, 1.2s, 1s, .7s;
     opacity: 1;
     /*! opacity: 0; */
-    right: 39.3%;
+    left: 39.3%;
     width: 45%;
     transform: rotateY(0);
 }
 
 .photoNoActB {
-    transition-property: opacity, clip-path, right, width, transform;
+    transition-property: opacity, clip-path, left, width, transform;
     transition-duration: .7s, .1s, 1.7s, .7s, .7s;
     transition-timing-function: linear;
     transition-delay: 1.2s, .7s, 0s, 1s, .7s;
-    right: 65%;
+    left: 65%;
     clip-path: polygon(2.90% 4.55%, 100% 12.72%, 100% 89.16%, 1px 95.93%);
-    width: 60%;
     transform: rotateY(70deg);
+    display: none;
 }
 
 .pbPhoto {
@@ -808,7 +816,6 @@ ul {
 
 .SliderSecBack {
     right: 7.6%;
-    left: auto;
     width: 22.5%;
     clip-path: polygon(0.97% 15.81%, 100.09% 0.2%, 99.34% 99.72%, 3px 88.06%);
     top: 30%;

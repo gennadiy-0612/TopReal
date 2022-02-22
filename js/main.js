@@ -100,13 +100,13 @@ shch.secSlide = function (s) {
             this.changer[n].classList.add('VividBrownTrapezoid');
             this.changerMemo = this.changer[n];
 
-            this.slideSecMemo.classList.remove('photoAct', 'PA' + this.memo0);
-            this.slideSecMemo.classList.add('photoNoAct', 'PNA' + this.memo0);
-            this.slideSecMemo1.classList.remove('photoNoAct', 'PNA' + this.memo1);
+            this.slideSecMemo.classList.remove('photoAct', 'activePhoto' + this.memo0, 'PA' + this.memo0);
+            this.slideSecMemo.classList.add('photoNoAct', 'activePhoto' + this.memo0, 'PNA' + this.memo0);
+            this.slideSecMemo1.classList.remove('photoNoAct', 'activePhoto' + this.memo1, 'PNA' + this.memo1);
             this.slideSecMemo1 = this.slideSecMemo;
             this.memo1 = this.memo0;
             this.memo0 = n;
-            this.slideSec[n].classList.add('photoAct', 'PA' + this.memo0);
+            this.slideSec[n].classList.add('photoAct', 'activePhoto' + this.memo0, 'PA' + this.memo0);
             this.slideSecMemo = this.slideSec[n];
 
             this.slideSecMemoB.classList.remove('photoActB');
