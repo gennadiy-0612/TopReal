@@ -622,18 +622,20 @@ ul {
     margin: auto;
     height: 74%;
 }
-.activePhoto0 {clip-path: polygon(8% 19.18%, 8% 9.69%, 8% 97.96%, 8% 92.94%);}
-.activePhoto1 {clip-path: polygon(7.8% 19.18%, 7.8% 9.69%, 8.9% 97.96%, 8.9% 92.94%);}
-.activePhoto2 {clip-path: polygon(7.8% 19.18%, 7.8% 9.69%, 8.9% 97.96%, 8.9% 92.94%);}
-.activePhoto3 {clip-path: polygon(7.8% 19.18%, 7.8% 9.69%, 8.9% 97.96%, 8.9% 92.94%);}
+.PA0 {clip-path: polygon(8% 19.18%, 8% 9.69%, 8% 97.96%, 8% 92.94%);}
+.PA1 {clip-path: polygon(7.8% 19.18%, 7.8% 9.69%, 8.9% 97.96%, 8.9% 92.94%);}
+.PA2 {clip-path: polygon(7.8% 19.18%, 7.8% 9.69%, 8.9% 97.96%, 8.9% 92.94%);}
+.PA2 {clip-path: polygon(7.8% 19.18%, 7.8% 9.69%, 8.9% 97.96%, 8.9% 92.94%);}
 .photoAct.p0{clip-path: polygon(0.1% 14.69%, 98.99% 4.43%, 98.98% 100.12%, 0.14% 90.35%);}
 .photoAct.p1{clip-path: polygon(-0.21% 6.26%, 99.41% 12.2%, 98.90% 96.35%, -0.26% 99.82%);}
 .photoAct.p2{clip-path: polygon(0.44% 5.5%, 98.98% 0.34%, 99.57% 100.25%, 0.39% 88.94%);}
-.photoAct.p3{clip-path: polygon(0.01% 6.47%, 99.63% 10.47%, 100% 85.07%, -0.26% 99.36%);}
+.photoAct.p3{/*! clip-path: polygon(0.01% 6.47%, 99.63% 10.47%, 100% 85.07%, -0.26% 99.36%); */}
 
 .photoAct {
-    opacity: 1;
+    /*! opacity: 1; */
     left: 10%;
+    /*! display: none; */
+    border: 2px solid #000;
 }
 
 .photoNoAct {
