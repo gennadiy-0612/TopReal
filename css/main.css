@@ -75,11 +75,13 @@ ul {
     transition-duration: .2s;
     transition-timing-function: linear;
     display: block;
-    margin: -6.3% 0 -4.2% -10%;
+    margin: -6.3% 0 -4.2% -6%;
     text-indent: 10%;
-    clip-path: polygon(4.49% 20.96%, 99.04% 8.14%, 99% 89.62%, 12px 79.55%);
+    clip-path: polygon(4.49% 20.96%, 99.04% 8.14%, 99% 89.62%, 4.3% 79.55%);
     font: 600 24px/83px 'Raleway', sans-serif;
     background: transparent url('../img/arrowRight.svg') 90% center no-repeat;
+    width: 73%;
+    background-size: 33px;
 }
 
 .VividBrownTrapezoid {
@@ -577,13 +579,9 @@ ul {
 }
 
 .Slider2 {
-    flex: 1 1 50%;
+    flex: 6 1 auto;
     position: relative;
     height: 100%;
-}
-
-.Slider2 .photo {
-    /*! opacity: 0; */
 }
 
 .photo {
@@ -591,11 +589,11 @@ ul {
     height: 100%;
     background-size: cover;
     position: absolute;
-    right: 6%;
+    right: 13%;
     transition-property: opacity, clip-path, right, width;
-    transition-duration: .9s, .7s, .9s, .9s;
+    transition-duration: 1.3s, 1.2s, 1.1s, 1100ms;
     transition-timing-function: linear;
-    transition-delay: .3s, .2s, .5s, .5s;
+    transition-delay: .8s, .7s, 1s, 587ms;
 }
 
 .p0 {
@@ -632,7 +630,7 @@ ul {
 
 .photoAct {
     opacity: 1;
-    right: 6%;
+    right: 13%;
     width: 48%;
 }
 
@@ -641,14 +639,20 @@ ul {
 }
 
 .photoNoAct {
-    right: 75%;
+    right: 95%;
     opacity: 0;
     width: 0;
     clip-path: polygon(34.60% 28.83%, 100% 7.57%, 100% 90.14%, 34.73% 80.96%);
     transition-duration: .9s, .7s, 916ms, 417ms;
     transition-delay: .3s, .2s, 0s, .5s;
+    /*animation-name: BP;*/
+    /*animation-delay: 1.5s;*/
+    /*animation-fill-mode: forwards;*/
 }
-
+@keyframes BP {
+    0%{right: 75%;}
+    100%{right: 6%;}
+}
 .photoBack {
     height: 67.4%;
     position: absolute;
@@ -682,12 +686,12 @@ ul {
 
 .photoActB {
     transition-property: opacity, clip-path, right, width, transform;
-    transition-duration: .2s, 0.4s, 0.7s, .3s, .4s;
+    transition-duration: .2s, 0.8s, 0.7s, .3s, .4s;
     transition-timing-function: linear;
-    transition-delay: .7s, 1.5s, 1.2s, 1s, .7s;
+    transition-delay: .7s, 1.1s, 1.2s, 1s, .7s;
     opacity: 1;
     /*! opacity: 0; */
-    right: 50%;
+    right: 39.3%;
     width: 45%;
     transform: rotateY(0);
 }
@@ -708,7 +712,7 @@ ul {
     transition-delay: .7s;
     transition-timing-function: linear;
     transition-duration: .7s;
-    opacity: .4;
+    opacity: 0;
 }
 
 .pb1photo {
@@ -745,7 +749,7 @@ ul {
 .photoBackFront {
     transition-property: background-color, opacity;
     transition-delay: .7s, .7s;
-    transition-timing-function: linear;
+    transition-timing-function: ease-out;
     transition-duration: .7s, .7s;
     opacity: .4;
     background-color: #BBB;
@@ -770,8 +774,8 @@ ul {
 }
 
 .content {
-    flex: 0.05 1 auto;
-    padding: 4.7% 0;
+    flex: 0 1 auto;
+    padding: 4.7% 1%;
 }
 
 .contentH2 {
@@ -779,24 +783,25 @@ ul {
     font-size: 56px;
     letter-spacing: -0.9px;
     max-width: 450px;
+    padding: 0 0 0 1.8%;
 }
 
 .contentP {
     line-height: 33px;
     letter-spacing: 1px;
     max-width: 550px;
-    margin: 4.3% 0 0 0;
+    padding: 4% 0 0 1.8%;
 }
 
 .SecSliderMenu {
-    margin: 3.9% 0 3.3% 0;
+    padding: 2.6% 0 3.3% 0;
     display: flex;
     flex-wrap: wrap;
 }
 
 .SecSliderMenuLi {
     padding: 2.9% 1%;
-    width: 40%;
+    width: 41.2%;
 }
 
 .AllList {
