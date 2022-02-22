@@ -423,7 +423,7 @@ ul {
 }
 
 .SI0act {
-    clip-path: polygon(7.77% 19.18%, 7.71% 9.69%, 7.3% 97.68%, 7.3% 92.94%);
+    clip-path: polygon(7.7% 19.18%, 7.7% 9.69%, 7.7% 97.68%, 7.7% 92.94%);
 }
 
 .SI1 {
@@ -471,7 +471,7 @@ ul {
 }
 
 .prevSlide {
-    opacity: 0;
+    /*! opacity: 0; */
     left: -5%;
     transition-duration: 566ms, 1s, 155ms, 200ms;
     transition-delay: 0ms, .2s, 355ms, 300ms;
@@ -645,13 +645,6 @@ ul {
     clip-path: polygon(34.60% 28.83%, 100% 7.57%, 100% 90.14%, 34.73% 80.96%);
     transition-duration: .9s, .7s, 916ms, 417ms;
     transition-delay: .3s, .2s, 0s, .5s;
-    /*animation-name: BP;*/
-    /*animation-delay: 1.5s;*/
-    /*animation-fill-mode: forwards;*/
-}
-@keyframes BP {
-    0%{right: 75%;}
-    100%{right: 6%;}
 }
 .photoBack {
     height: 67.4%;
