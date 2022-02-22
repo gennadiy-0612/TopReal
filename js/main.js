@@ -104,6 +104,10 @@ shch.secSlide = function (s) {
             this.slideSecMemo.classList.add('photoNoAct', 'activePhoto' + this.memo0, 'PNA' + this.memo0);
             this.slideSecMemo1.classList.remove('photoNoAct', 'activePhoto' + this.memo1, 'PNA' + this.memo1);
             this.slideSecMemo1 = this.slideSecMemo;
+            if (this.memo1 === this.memo0) {
+                this.slideSecMemo.classList.add('prev');
+                this.slideSecMemo1.classList.remove('prev');
+            }
             this.memo1 = this.memo0;
             this.memo0 = n;
             this.slideSec[n].classList.add('photoAct', 'activePhoto' + this.memo0, 'PA' + this.memo0);

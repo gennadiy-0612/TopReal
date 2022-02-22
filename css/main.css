@@ -590,7 +590,7 @@ ul {
     position: absolute;
     left: 5%;
     transition-property: opacity, clip-path, left, width;
-    transition-duration: 1.3s, 1.2s, 1.1s, 1100ms;
+    transition-duration: .5s, .5s, .5s, .5s;
     transition-timing-function: linear;
     transition-delay: .7s, .7s, .7s, .7s;
     clip-path: polygon(0% 19.18%, 0% 9.69%, 0% 97.96%, 0% 92.94%);
