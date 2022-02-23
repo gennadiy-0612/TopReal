@@ -606,13 +606,12 @@ polygon(13 % 4 %, 40 % 0 %, 40 % 93 %, 13 % 86 %);
     height: 100%;
     background-size: cover;
     position: absolute;
-    left: 95%;
     transition-property: opacity, clip-path, left, width;
-    transition-duration: .5s, .5s, .5s, .5s;
+    transition-duration: .5s, 418ms, 418ms, .5s;
     transition-timing-function: linear;
-    transition-delay: .7s, .7s, .7s, .7s;
+    transition-delay: .7s, 700ms, 700ms, .7s;
     clip-path: polygon(0% 19.18%, 0% 9.69%, 0% 97.96%, 0% 92.94%);
-    left: 60%;
+    left: 90%;
     top: 0;
 }
 
@@ -675,9 +674,8 @@ polygon(13 % 4 %, 40 % 0 %, 40 % 93 %, 13 % 86 %);
 
 .photoAct {
     /*! opacity: 1; */
-    left: 10%;
+    left: 5%;
     /*! display: none; */
-    border: 2px solid #000;
 }
 
 .photoNoAct {
@@ -685,8 +683,8 @@ polygon(13 % 4 %, 40 % 0 %, 40 % 93 %, 13 % 86 %);
     /*! opacity: 0; */
     /*! width: 0; */
     /*! clip-path: polygon(7.8% 19.18%, 7.71% 9.69%, 8.98% 97.96%, 8.9% 92.94%); */
-    /*! transition-duration: .9s, .7s, 916ms, 417ms; */
-    /*! transition-delay: .7s, .7s, .7s, .7s; */
+    transition-duration: .5s, 124ms, 418ms, .5s;
+    transition-delay: .7s, 700ms, 872ms, .7s;
 }
 
 .photoBack {

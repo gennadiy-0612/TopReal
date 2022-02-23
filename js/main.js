@@ -78,7 +78,7 @@ shch.topSlider = function () {
         this.current.textContent = this.number + 1;
     };
 };
-
+shch.moveCount = 1;
 shch.secSlide = function (s) {
     this.changer = document.querySelectorAll(s);
     this.changerMemo = document.querySelectorAll(s)[0];
@@ -91,6 +91,8 @@ shch.secSlide = function (s) {
     this.slideSecB = document.querySelectorAll('.photoBack');
     this.slideSecMemoB = document.querySelectorAll('.photoBack')[0];
     this.slideSecMemo1B = document.querySelectorAll('.photoBack')[1];
+
+    this.addRemove = 0;
     this.changeIt = function (n) {
         if (this.slideSecMemo !== this.slideSec[n]) {
             this.changerMemo.classList.remove('VividBrownTrapezoid');
@@ -99,22 +101,46 @@ shch.secSlide = function (s) {
 
             this.slideSecMemo.classList.remove('photoAct', 'PA' + this.memo0);
             this.slideSecMemo.classList.add('photoNoAct', 'PNA' + this.memo0);
-            this.slideSecMemo1.classList.remove('photoNoAct', 'PNA' + this.memo1);
-            this.slideSecMemo1 = this.slideSecMemo;
-            this.memo1 = this.memo0;
-            this.memo0 = n;
-            this.slideSec[n].classList.add('photoAct', 'PA' + this.memo0);
-            this.slideSecMemo = this.slideSec[n];
 
-            this.slideSecMemoB.classList.remove('photoActB');
-            this.slideSecMemoB.classList.add('photoNoActB');
-            this.slideSecMemo1B.classList.remove('photoNoActB');
-            this.slideSecMemo1B = this.slideSecMemoB;
-            this.slideSecB[n].classList.add('photoActB');
-            this.slideSecMemoB = this.slideSecB[n];
+            // if (shch.moveCount) {
+            //     shch.moveCount = 0;
+            // this.moveNoAct = new this.moveNoA(this.slideSecMemo, 'photoNoAct');
+            // this.slideSecMemo.addEventListener('transitionend', this.moveNoAct.reMove.bind(this.moveNoAct), false);
+            // this.slideSecMemo.addEventListener('transitioncancel', this.moveNoAct.reMove.bind(this.moveNoAct), false);
+            // }
+
         }
+        // else {
+        //     this.slideSecMemo.removeEventListener('transitionend', this.moveNoAct.reMove.bind(this.moveNoAct), false);
+        //     this.slideSecMemo.removeEventListener('transitioncancel', this.moveNoAct.reMove.bind(this.moveNoAct), false);
+        // }
+        this.slideSecMemo1.classList.remove('photoNoAct', 'PNA' + this.memo1);
+        this.slideSecMemo1 = this.slideSecMemo;
+        this.memo1 = this.memo0;
+        this.memo0 = n;
+        this.slideSec[n].classList.add('photoAct', 'PA' + this.memo0);
+        this.slideSecMemo = this.slideSec[n];
+
+        this.slideSecMemoB.classList.remove('photoActB');
+        this.slideSecMemoB.classList.add('photoNoActB');
+        this.slideSecMemo1B.classList.remove('photoNoActB');
+        this.slideSecMemo1B = this.slideSecMemoB;
+        this.slideSecB[n].classList.add('photoActB');
+        this.slideSecMemoB = this.slideSecB[n];
+    };
+    this.moveNoA = function (el, reMove) {
+        this.reMove = function () {
+            el.classList.remove(reMove);
+            console.log('th')
+        };
+        // console.log(this)
+    };
+    this.stop = function () {
+        console.log(this);
     }
 };
+
+
 shch.addDetect = function (inter) {
     this.checkVision = function (init) {
         const options = {
@@ -158,6 +184,7 @@ shch.LoadFunc = function () {
     document.querySelector('.arrowLeft').addEventListener('click', shch.goTo.less.bind(shch.goTo), {passive: true});
     shch.weMade = new shch.secSlide('.weMade');
     shch.addTo('.weMade', shch.weMade, shch.weMade.changeIt);
+
 
     shch.watchS2 = new shch.addDetect(.5);
     shch.watchS2.checkVision(shch.watch.screenS2);

@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6db7a532-5c8a-46cf-b205-5af3dddb6a72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +72,8 @@
       <workItem from="1645463076445" duration="3026000" />
       <workItem from="1645507394482" duration="8368000" />
       <workItem from="1645530513958" duration="4685000" />
-      <workItem from="1645542968326" duration="9344000" />
+      <workItem from="1645542968326" duration="14296000" />
+      <workItem from="1645606101071" duration="3906000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1644853491401</created>
@@ -359,7 +362,28 @@
       <option name="project" value="LOCAL" />
       <updated>1645552592193</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="work-version">
+      <created>1645553150382</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1645553150382</updated>
+    </task>
+    <task id="LOCAL-00043" summary="equal">
+      <created>1645553176784</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1645553176784</updated>
+    </task>
+    <task id="LOCAL-00044" summary="equal">
+      <created>1645553237440</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1645553237440</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,7 +407,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="start" />
     <MESSAGE value="work-version" />
-    <option name="LAST_COMMIT_MESSAGE" value="work-version" />
+    <MESSAGE value="equal" />
+    <option name="LAST_COMMIT_MESSAGE" value="equal" />
   </component>
   <component name="WindowStateProjectService">
     <state x="432" y="183" key="#Images" timestamp="1644994565645">
@@ -398,10 +423,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="570" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1645441888343" />
-    <state x="465" y="121" key="CommitChangelistDialog2" timestamp="1645553232206">
+    <state x="465" y="121" key="CommitChangelistDialog2" timestamp="1645553236449">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="465" y="121" key="CommitChangelistDialog2/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1645553232206" />
+    <state x="465" y="121" key="CommitChangelistDialog2/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1645553236449" />
     <state x="100" y="61" width="1496" height="866" key="DiffContextDialog" timestamp="1645546667782">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
