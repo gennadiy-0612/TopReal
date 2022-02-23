@@ -107,10 +107,13 @@ ul {
 .Head::after {
     content: '';
     background: linear-gradient(#00000059, #00000059, #00000059, transparent, transparent);
-height: 50%;
-margin: auto;
-position: absolute;
-width: 100%;}
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+}
 
 .headBack {
     height: 100vh;
@@ -162,14 +165,6 @@ width: 100%;}
 }
 
 .firstSet {
-}
-
-.firstOut {
-    background: linear-gradient(#00000059, #00000059, #00000059, transparent, transparent);
-    height: 50%;
-    margin: auto;
-    position: absolute;
-    width: 100%;
 }
 
 .firstLine {
@@ -354,7 +349,7 @@ width: 100%;}
 .mainProp {
     position: relative;
     z-index: 1;
-    flex: 1 1 auto;
+    flex: 2.6 1 auto;
 }
 
 .mainProposition {
@@ -689,9 +684,6 @@ polygon(13 % 4 %, 40 % 0 %, 40 % 93 %, 13 % 86 %);
 
 .photoNoAct {
     left: 5%;
-    /*! opacity: 0; */
-    /*! width: 0; */
-    /*! clip-path: polygon(7.8% 19.18%, 7.71% 9.69%, 8.98% 97.96%, 8.9% 92.94%); */
     transition-duration: .5s, 124ms, 418ms, 418ms;
     transition-delay: .7s, 700ms, 872ms, .7s;
 }
@@ -745,7 +737,6 @@ polygon(13 % 4 %, 40 % 0 %, 40 % 93 %, 13 % 86 %);
     transition-delay: 700ms, 700ms, 870ms, 700ms, 700ms;
     left: -10%;
     clip-path: polygon(3% 5%, 100% 13%, 100% 89%, 0% 100%);
-    /*! display: none; */
     opacity: 0;
     width: 10%;
     transform: rotateY(70deg);
@@ -878,4 +869,35 @@ polygon(13 % 4 %, 40 % 0 %, 40 % 93 %, 13 % 86 %);
 
 .SlideBackAnim {
     transform: translateY(0);
+}
+
+@media (max-width: 1600px) {
+    .leftTop {
+        flex: 0.66 auto;
+    }
+
+    .centerTop {
+        flex: 1 1 auto;
+        width: 200px;
+        display: block;
+        height: 134px;
+        margin: 27px 0 0;
+    }
+
+    .rightTop {
+        flex: 0.7 1 auto;
+        padding: 2% 0 0;
+    }
+
+    .slideNavy {
+        flex: 0.25 1 auto;
+        margin: 9.9% auto 0;
+    }
+
+    .mainProp {
+        flex: 2.9 1 auto;;
+    }
+    .Slider{
+        left: 0;
+    }
 }
