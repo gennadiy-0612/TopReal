@@ -916,8 +916,23 @@ polygon(13 % 4 %, 40 % 0 %, 40 % 93 %, 13 % 86 %);
     }
 
     .Slider2 {
+        flex: 3 1 auto;
+    }
+
+    .photoNoAct {
+        width: 66.3%;
+        left: 22%;
+    }
+
+    .photoActB {
+        width: 70%;
+        left: -5%;
+    }
+
+    .photoBack {
     }
 
     .content {
+        max-width: 50%;
     }
 }
