@@ -959,7 +959,7 @@ polygon(13 % 4 %, 40 % 0 %, 40 % 93 %, 13 % 86 %);
     }
 
     .slideNavy {
-        flex: 0.595 1 auto;
+        flex: 0.65 1 auto;
         justify-content: flex-start;
         margin: 9.2% auto 0;
     }
@@ -969,6 +969,10 @@ polygon(13 % 4 %, 40 % 0 %, 40 % 93 %, 13 % 86 %);
         left: 14%;
         height: 94.4%;
         width: 80px;
+    }
+
+    .mainProp {
+        flex: 1.9 1 auto;
     }
 
     .actTitle {
@@ -981,7 +985,286 @@ polygon(13 % 4 %, 40 % 0 %, 40 % 93 %, 13 % 86 %);
     .actionMain {
         line-height: 19px;
         font-size: 23px;
-        padding: 0 0 0%;
+        padding: 2.3% 0 3.9%;
 
+    }
+
+    .Slider {
+        top: -9%;
+        left: 13px;
+        flex: 2.1 1 auto;
+    }
+
+    .SliderItem {
+        width: 100%;
+    }
+
+    .contentH2 {
+        line-height: 60px;
+        font-size: 51px;
+    }
+
+    .photo {
+        width: 65.7%;
+        height: 70%;
+        top: 0;
+    }
+
+    .photoAct {
+        left: 22%;
+    }
+
+    .content {
+        max-width: 49.9%;
+    }
+
+    .contentP {
+        padding: 5% 0 0 1.8%;
+        line-height: 31px;
+        max-width: 470px;
+        letter-spacing: -0.2px;
+    }
+
+    .SecSliderMenuLi {
+        padding: 1.6% 2.2% 1.6% 0;
+        width: 40%;
+        margin: 0 0.5% 0 0;
+    }
+
+    .weMade {
+        margin: -6.4% 0 -6.4% -3%;
+        line-height: 22px;
+        font-size: 21px;
+        padding: 8.8% 9%;
+    }
+
+    .SecSliderMenu {
+        padding: 3.8% 0 3.4% 0;
+    }
+
+    .photoBack {
+        width: 53%;
+        height: 65%;
+        top: -5%;
+    }
+
+    .photoActB {
+        left: 0;
+    }
+}
+
+@media (max-width: 1440px) {
+    .mainProposition {
+        right: initial;
+    }
+}
+
+@media (max-width: 1110px) {
+    .leftTop {
+        flex: 0.4 1 auto;
+    }
+
+    .leftCorner {
+        max-width: 261px;
+        margin: 4.4% 1% 0 auto;
+    }
+
+    .centerTop {
+        max-width: 246px;
+        margin: 1.1% 0 0;
+    }
+
+    .phone {
+        font-size: 13px;
+    }
+
+    .phoneBold {
+        font-size: 13px;
+    }
+
+    .catTitle {
+        margin: 3.8% 0 0 auto;
+        max-width: 266px;
+    }
+
+    .catTitleP {
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 18px;
+    }
+
+    .burger {
+        height: 17px;
+        width: 16px;
+    }
+
+    .catalog {
+        margin: 2.6% 0 0 auto;
+        max-width: 267px;
+    }
+
+    .catalogItemP {
+        font-size: 12px;
+        letter-spacing: 0.4px;
+    }
+
+    .centerTop {
+        max-width: 190px;
+        margin: -0.3% 0 0;
+    }
+
+    .rightTop {
+        flex: 0.25 1 auto;
+        padding: 2% 0 0;
+    }
+
+    .mainMenu {
+        margin: 1.9% 29% 0 auto;
+    }
+
+    .socialRightLi {
+
+    }
+
+    .leftIcon {
+    }
+
+    .mainMenuLiA {
+        font-size: 12px;
+        letter-spacing: 0.1px;
+    }
+
+    .slideNavy {
+        flex: 0.33 1 auto;
+        justify-content: flex-start;
+        margin: 6.4% auto 0;
+    }
+
+    .slideNavySet {
+        height: 77%;
+        width: 62px;
+        left: 20%;
+    }
+
+    .zoom {
+        width: 44px;
+        height: 20px;
+    }
+
+    .actTitle {
+        font-size: 63px;
+        line-height: 61px;
+        letter-spacing: -1.9px;
+        max-width: 405px;
+        padding: 8% 0 12.9% 0;
+    }
+
+    .mainProposition {
+        left: 13.5%
+    }
+
+    .actionMain {
+        font-size: 17px;
+        line-height: 16px;
+        padding: 2.3% 0 3.9%;
+        max-width: 228px;
+        margin-left: 1.6%;
+    }
+
+    .Slider {
+        top: -8.4%;
+    }
+
+    .SliderItem {
+        height: 70%;
+    }
+
+    .SliderBack {
+        height: 60%;
+        top: 14%;
+    }
+
+    .content {
+        flex: 0 1 auto;
+        padding: 7.4% 1%;
+        max-width: 49.6%;
+    }
+
+    .contentH2 {
+        font-size: 37px;
+        line-height: 46px;
+        max-width: 370px;
+        letter-spacing: 0;
+    }
+
+    .contentP {
+        padding: 5% 0 0 1.8%;
+        line-height: 23px;
+        max-width: 362px;
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+
+    .SecSliderMenuLi {
+        width: 42%;
+        margin: 0 -3.5% 0 0;
+    }
+
+    .weMade {
+        margin: -6.4% 0 -6.4% -3%;
+        line-height: 17px;
+        font-size: 16px;
+        padding: 8.8% 6%;
+    }
+
+    .AllList {
+        padding: 8px 11px;
+        font-size: 13px;
+        margin: 0 0 0 1%;
+    }
+
+    .photo {
+        height: 56.7%;
+        top: 0.5%;
+    }
+
+    .photoBack {
+        width: 53%;
+        height: 46%;
+        top: 2%;
+    }
+}
+
+@media (max-width: 760px) {
+    .secondLine {
+
+    }
+
+    .slideNavy {
+        order: 1;
+        margin: 50% auto 0 -58%;
+    }
+
+    .mainProp {
+
+    }
+
+    .Slider {
+        order: 1;
+
+    }
+
+    .mainProposition {
+
+    }
+
+    .secondDisplayIn {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100%;
+        max-width: 100%;
     }
 }
