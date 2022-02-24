@@ -13,7 +13,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="2Slider-trans" />
+        <entry key="$PROJECT_DIR$" value="work-version" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,13 +77,7 @@
       <workItem from="1645685482827" duration="4937000" />
       <workItem from="1645710579361" duration="1218000" />
       <workItem from="1645719852048" duration="509000" />
-    </task>
-    <task id="LOCAL-00003" summary="start">
-      <created>1644949753628</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1644949753629</updated>
+      <workItem from="1645723337015" duration="1280000" />
     </task>
     <task id="LOCAL-00004" summary="start">
       <created>1645000304688</created>
@@ -421,7 +415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645674823356</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="equal">
+      <created>1645723347102</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1645723347102</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,10 +462,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="570" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1645441888343" />
-    <state x="465" y="121" key="CommitChangelistDialog2" timestamp="1645718165493">
+    <state x="465" y="121" key="CommitChangelistDialog2" timestamp="1645723344662">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="465" y="121" key="CommitChangelistDialog2/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1645718165493" />
+    <state x="465" y="121" key="CommitChangelistDialog2/0.0.1680.1050/1680.0.1097.617@0.0.1680.1050" timestamp="1645723344662" />
     <state x="100" y="61" width="1496" height="866" key="DiffContextDialog" timestamp="1645628308651">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
