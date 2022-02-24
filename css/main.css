@@ -1267,6 +1267,12 @@ polygon(13 % 4 %, 40 % 0 %, 40 % 93 %, 13 % 86 %);
 
 
     .mainProposition {
+        left: 0;
+    }
+    .actTitle{
+        padding: 0;
+        margin: auto;
+        
     }
 
     .secondDisplayIn {
