@@ -609,27 +609,25 @@ polygon(13 % 4 %, 40 % 0 %, 40 % 93 %, 13 % 86 %);
 }
 
 .secondDisplayIn {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 37.3% 92%;
-    grid-column-gap: 0;
-    grid-row-gap: 0;
     height: 100%;
     position: relative;
 }
 .firstMob{
-     grid-area: 1 / 2 / 2 / 3;
+    float: right;
+   
 }
 .secondMob{
-     grid-area: 1 / 1 / 3 / 1;
+    
 }
 .thirdMob{
-     grid-area: 2 / 2 / 3 / 3;
+
 }
 .Slider2 {
     flex: 6 1 auto;
     position: relative;
     height: 100%;
+    float: left;
+    width: 50%;
 }
 
 .photo {
@@ -837,6 +835,10 @@ polygon(13 % 4 %, 40 % 0 %, 40 % 93 %, 13 % 86 %);
 .content {
     flex: 0 1 auto;
     padding: 4.7% 1%;
+    float: right;
+    width: 31%;
+    clear: right;
+    top: 0%;
 }
 
 .contentH2 {
