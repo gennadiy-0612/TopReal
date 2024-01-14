@@ -475,6 +475,10 @@ ul {
     transition-delay: 0ms, .2s, 355ms, 300ms;
 }
 
+.backFS{
+
+}
+
 .currentSlide {
     opacity: 1;
     left: 5%;
