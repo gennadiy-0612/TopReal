@@ -21,8 +21,8 @@ shch.topSlider = function () {
             this.SliderBack[this.slide0].classList.remove('SB' + this.slide0 + 'actSB', 'prevSlideSB');
         }
         if (-1 < this.slide1 && this.slide1 < 5) {
-            this.changeSI[this.slide1].classList.remove('SI' + this.slide1 + 'act', 'currentSlide');
-            this.SliderBack[this.slide1].classList.remove('SB' + this.slide1 + 'actSB', 'currentSlideSB');
+            this.changeSI[this.slide1].classList.remove('SI' + this.slide1 + 'act', 'currentSlide', 'backFS');
+            this.SliderBack[this.slide1].classList.remove('SB' + this.slide1 + 'actSB', 'currentSlideSB', 'backBS');
         }
         this.number--;
         this.slide0--;
