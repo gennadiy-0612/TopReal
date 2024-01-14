@@ -27,6 +27,7 @@ shch.topSlider = function () {
         this.number--;
         this.slide0--;
         this.slide1--;
+
         if (this.number < 0) this.number = 0;
         if (this.slide0 < -1) this.slide0 = -1;
         if (this.slide1 < 0) this.slide1 = 0;
