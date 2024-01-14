@@ -36,7 +36,7 @@ shch.topSlider = function () {
         this.changeBack[this.number].classList.add('actBack');
         if (-1 < this.slide0 && this.slide0 < 5) {
             this.changeSI[this.slide0].classList.add('SI' + this.slide0 + 'act', 'prevSlide', 'backFS');
-            this.SliderBack[this.slide0].classList.add('SB' + this.slide0 + 'actSB', 'prevSlideSB', 'backSB');
+            this.SliderBack[this.slide0].classList.add('SB' + this.slide0 + 'actSB', 'prevSlideSB', 'backBS');
         }
         if (-1 < this.slide1 && this.slide1 < 5) {
             this.changeSI[this.slide1].classList.add('SI' + this.slide1 + 'act', 'currentSlide');
