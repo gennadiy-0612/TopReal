@@ -381,7 +381,7 @@ ul {
     max-width: 307px;
     padding: 16px 14px;
     font-size: 25px;
-    letter-spacing: .2px;
+    letter-spacing: 0;
     text-align: center;
     line-height: 31px;
     opacity: 0;
