@@ -514,12 +514,12 @@ ul {
 }
 
 .SB0 {
-    clip-path: polygon(1.73% 0%, 80% 15%, 80% 79%, 1% 92.06%);
+    clip-path: polygon(1.73% 0, 80% 15%, 80% 79%, 1% 92.06%);
     width: 25%;
 }
 
 .SB1 {
-    clip-path: polygon(1.73% 20.79%, 100.04% -0.48%, 101.21% 100.19%, 0% 84.06%);
+    clip-path: polygon(1.73% 20.79%, 100.04% -0.48%, 101.21% 100.19%, 0 84.06%);
     width: 25%;
 }
 
@@ -548,11 +548,11 @@ ul {
 }
 
 .currentSlideSB.SB0 {
-    clip-path: polygon(1.73% 0%, 80% 15%, 80% 79%, 1% 92.06%);
+    clip-path: polygon(1.73% 0, 80% 15%, 80% 79%, 1% 92.06%);
 }
 
 .currentSlideSB.SB1 {
-    clip-path: polygon(12.9% 4.14%, 90% 0%, 90% 92.62%, 13.29% 86.58%);
+    clip-path: polygon(12.9% 4.14%, 90% 0, 90% 92.62%, 13.29% 86.58%);
 }
 
 .currentSlideSB.SB2 {
@@ -564,12 +564,12 @@ ul {
 }
 
 .prevSlideSB.SB0 {
-polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);
+polygon(13% 4%, 40% 0, 40% 93%, 13% 86%);
     clip-path: polygon(13% 4%, 40% 0, 40% 93%, 13% 86%);
 }
 
 .prevSlideSB.SB1 {
-polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);
+polygon(13% 4%, 40% 0, 40% 93%, 13% 86%);
     clip-path: polygon(13% 4%, 40% 0, 40% 93%, 13% 86%);
 }
 
