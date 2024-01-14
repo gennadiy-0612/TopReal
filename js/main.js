@@ -40,7 +40,7 @@ shch.topSlider = function () {
         }
         if (-1 < this.slide1 && this.slide1 < 5) {
             this.changeSI[this.slide1].classList.add('SI' + this.slide1 + 'act', 'currentSlide');
-            this.SliderBack[this.slide1].classList.add('SB' + this.slide1 + 'actSB', 'currentSlideSB', 'currentBS');
+            this.SliderBack[this.slide1].classList.add('SB' + this.slide1 + 'actSB', 'currentSlideSB');
         }
         this.current.textContent = this.number + 1;
     };
