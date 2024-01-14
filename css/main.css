@@ -153,14 +153,16 @@ ul {
 
 .firstSet {
     width: 100%;
-    background: linear-gradient(#00000059,#00000059,#00000059,transparent);
+    background: linear-gradient(#00000059, #00000059, #00000059, transparent);
     height: 19%;
 }
-.firstOut{
+
+.firstOut {
     max-width: 1600px;
     margin: auto;
     position: relative;
 }
+
 .firstLine {
     display: flex;
     justify-content: space-between;
@@ -475,7 +477,7 @@ ul {
     transition-delay: 0ms, .2s, 355ms, 300ms;
 }
 
-.backFS{
+.backFS {
 
 }
 
@@ -565,10 +567,26 @@ ul {
     clip-path: polygon(2.01% 5.99%, 90% -0.48%, 90% 92.79%, 1.28% 90.28%);
 }
 
-.prevSlideSB.SB0{polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);clip-path: polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);}
-.prevSlideSB.SB1{polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);clip-path: polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);}
-.prevSlideSB.SB2{polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);clip-path: polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);}
-.prevSlideSB.SB3{polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);clip-path: polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);}
+.prevSlideSB.SB0 {
+polygon(13 % 4 %, 40 % 0 %, 40 % 93 %, 13 % 86 %);
+    clip-path: polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);
+}
+
+.prevSlideSB.SB1 {
+polygon(13 % 4 %, 40 % 0 %, 40 % 93 %, 13 % 86 %);
+    clip-path: polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);
+}
+
+.prevSlideSB.SB2 {
+polygon(13 % 4 %, 40 % 0 %, 40 % 93 %, 13 % 86 %);
+    clip-path: polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);
+}
+
+.prevSlideSB.SB3 {
+polygon(13 % 4 %, 40 % 0 %, 40 % 93 %, 13 % 86 %);
+    clip-path: polygon(13% 4%, 40% 0%, 40% 93%, 13% 86%);
+}
+
 .secondDisplay {
     height: 100%;
     position: relative;

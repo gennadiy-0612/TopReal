@@ -39,8 +39,8 @@ shch.topSlider = function () {
             this.SliderBack[this.slide0].classList.add('SB' + this.slide0 + 'actSB', 'prevSlideSB', 'backBS');
         }
         if (-1 < this.slide1 && this.slide1 < 5) {
-            this.changeSI[this.slide1].classList.add('SI' + this.slide1 + 'act', 'currentSlide');
-            this.SliderBack[this.slide1].classList.add('SB' + this.slide1 + 'actSB', 'currentSlideSB');
+            this.changeSI[this.slide1].classList.add('SI' + this.slide1 + 'act', 'currentSlide', 'currentFS');
+            this.SliderBack[this.slide1].classList.add('SB' + this.slide1 + 'actSB', 'currentSlideSB', 'currentBS');
         }
         this.current.textContent = this.number + 1;
     };
