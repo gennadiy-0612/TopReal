@@ -24,6 +24,7 @@ shch.topSlider = function () {
             this.changeSI[this.slide1].classList.remove('SI' + this.slide1 + 'act', 'currentSlide', 'currentSlideToBack');
             this.SliderBack[this.slide1].classList.remove('SB' + this.slide1 + 'actSB', 'currentSlideSB', 'currentSlideSBToBack');
         }
+
         this.number--;
         this.slide0--;
         this.slide1--;
