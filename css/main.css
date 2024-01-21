@@ -1,859 +1,711 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&display=swap');
-
 .out, .outMain {
-    height: 100%;
+  height: 100%;
 }
-
 .out,
 .outMain,
 p,
 h1,
 h2,
 h3 {
-    margin: 0;
+  margin: 0;
 }
-
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-
 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
-
 .cursorPoint:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
-
 .Ag3 {
-    font: 300 20px/30px 'Raleway', sans-serif;
+  font: 300 20px/30px 'Raleway', sans-serif;
 }
-
 .Ag4 {
-    font: 400 18px/21px 'Raleway', sans-serif;
+  font: 400 18px/21px 'Raleway', sans-serif;
 }
-
 .Ag41 {
-    font: 400 20px/23px 'Raleway', sans-serif;
+  font: 400 20px/23px 'Raleway', sans-serif;
 }
-
 .Ag6 {
-    font: 600 27px/31px 'Raleway', sans-serif;
+  font: 600 27px/31px 'Raleway', sans-serif;
 }
-
 .Ag61 {
-    font: 600 24px/45px 'Raleway', sans-serif;
+  font: 600 24px/45px 'Raleway', sans-serif;
 }
-
 .Ag62 {
-    font: 600 25px/28px 'Raleway', sans-serif;
+  font: 600 25px/28px 'Raleway', sans-serif;
 }
-
 .Ag7 {
-    font: 700 50px/60px 'Raleway', sans-serif;
+  font: 700 50px/60px 'Raleway', sans-serif;
 }
-
 .Ag81 {
-    font: 800 14px/16px 'Raleway', sans-serif;
+  font: 800 14px/16px 'Raleway', sans-serif;
 }
-
 .Ag8l {
-    font: 800 22px/26px 'Raleway', sans-serif;
+  font: 800 22px/26px 'Raleway', sans-serif;
 }
-
 .Ag8 {
-    font: 800 80px/80px 'Raleway', sans-serif;
+  font: 800 80px/80px 'Raleway', sans-serif;
 }
-
 .colorWhite {
-    color: #FFFFFF;
+  color: #FFFFFF;
 }
-
 .VividBrown {
-    background-color: #BF8341;
+  background-color: #BF8341;
 }
-
 .weMade {
-    transition-property: background-color, color;
-    transition-duration: .2s;
-    transition-timing-function: linear;
-    display: block;
-    margin: -6.3% 0 -4.2% -10%;
-    text-indent: 10%;
-    clip-path: polygon(4.49% 20.96%, 99.04% 8.14%, 99% 89.62%, 12px 79.55%);
-    font: 600 24px/83px 'Raleway', sans-serif;
-    background: transparent url('../img/arrowRight.svg') 90% center no-repeat;
+  transition-property: background-color, color;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  display: block;
+  margin: -6.3% 0 -4.2% -10%;
+  text-indent: 10%;
+  clip-path: polygon(4.49% 20.96%, 99.04% 8.14%, 99% 89.62%, 12px 79.55%);
+  font: 600 24px/83px 'Raleway', sans-serif;
+  background: transparent url('../img/arrowRight.svg') 90% center no-repeat;
 }
-
 .VividBrownTrapezoid {
-    color: #ffffff;
-    background-color: #BF8341;
+  color: #ffffff;
+  background-color: #BF8341;
 }
-
 .Head {
-    height: 100%;
-    position: relative;
+  height: 100%;
+  position: relative;
 }
-
 .Head::before {
-    content: '';
-    position: absolute;
-    background-color: #000;
-    height: 100%;
-    width: 100%;
-    opacity: .3;
-    clip-path: polygon(0 0, 100% 0, 100% 76.7%, 0 91.8%);
+  content: '';
+  position: absolute;
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  opacity: .3;
+  clip-path: polygon(0 0, 100% 0, 100% 76.7%, 0 91.8%);
 }
-
 .headBack {
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
 }
-
 .hd1 {
-    background: url("../img/topBack.png") center center no-repeat;
-    background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 76.7%, 0 91.8%);
+  background: url("../img/topBack.png") center center no-repeat;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 76.7%, 0 91.8%);
 }
-
 .hd2 {
-    background: url("../img/test2.jpg") center center no-repeat;
-    background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 76.7%, 0 91.8%);
+  background: url("../img/test2.jpg") center center no-repeat;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 76.7%, 0 91.8%);
 }
-
 .hd3 {
-    background: url("../img/test3.jpg") center center no-repeat;
-    background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 76.7%, 0 91.8%);
+  background: url("../img/test3.jpg") center center no-repeat;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 76.7%, 0 91.8%);
 }
-
 .hd4 {
-    background: url("../img/test4.jpg") center center no-repeat;
-    background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 76.7%, 0 91.8%);
+  background: url("../img/test4.jpg") center center no-repeat;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 76.7%, 0 91.8%);
 }
-
 .hd5 {
-    background: url("../img/test5.jpg") center center no-repeat;
-    background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 76.7%, 0 91.8%);
+  background: url("../img/test5.jpg") center center no-repeat;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 76.7%, 0 91.8%);
 }
-
 .headBack {
-    opacity: 0;
-    transition: opacity .7s linear;
-    visibility: collapse;
+  opacity: 0;
+  transition: opacity .7s linear;
+  visibility: collapse;
 }
-
 .actBack {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
-
 .firstSet {
-    width: 100%;
-    background: linear-gradient(#00000059, #00000059, #00000059, transparent);
-    height: 19%;
+  width: 100%;
+  background: linear-gradient(#00000059, #00000059, #00000059, transparent);
+  height: 19%;
 }
-
 .firstOut {
-    max-width: 1600px;
-    margin: auto;
-    position: relative;
+  max-width: 1600px;
+  margin: auto;
+  position: relative;
 }
-
 .firstLine {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-
 .leftTop {
-    flex: 0.66 auto;
+  flex: 0.66 auto;
 }
-
 .leftCorner {
-    display: flex;
-    justify-content: space-between;
-    max-width: 364px;
-    margin: 33px 0 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 364px;
+  margin: 33px 0 0 auto;
 }
-
 .phones {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-
 .viberIcon,
 .telegramIcon {
-    margin: 0 4px;
+  margin: 0 4px;
 }
-
 .phone {
-    font-size: 19px;
+  font-size: 19px;
 }
-
 .phoneBold {
-    font-weight: 700;
+  font-weight: 700;
 }
-
 .catTitle {
-    display: flex;
-    max-width: 371px;
-    margin: 25px 0 0 auto;
-    align-items: center;
+  display: flex;
+  max-width: 371px;
+  margin: 25px 0 0 auto;
+  align-items: center;
 }
-
 .burger {
-    height: 20px;
-    width: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0 9px 0 0;
+  height: 20px;
+  width: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 9px 0 0;
 }
-
 .burgerLine {
-    height: 3px;
-    width: 100%;
-    background-color: #fff;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
 }
-
 .bl2 {
-    width: 50%
+  width: 50%
 
 }
-
 .bl3 {
-    width: 70%
+  width: 70%
 
 }
-
 .catalog {
-    max-width: 370px;
-    margin: 14px 0 0 auto;
-    display: flex;
-    flex: 3 1 auto;
+  max-width: 370px;
+  margin: 14px 0 0 auto;
+  display: flex;
+  flex: 3 1 auto;
 }
-
 .catTitleP {
-    letter-spacing: -0.4px;
+  letter-spacing: -0.4px;
 }
-
 .catalogItem {
-    padding: 0 9% 0 0;
+  padding: 0 9% 0 0;
 }
-
 .centerTop {
-    flex: 1 1 auto;
-    width: 200px;
-    display: block;
-    height: 134px;
-    margin: 27px 0 0;
+  flex: 1 1 auto;
+  width: 200px;
+  display: block;
+  height: 134px;
+  margin: 27px 0 0;
 }
-
 .rightTop {
-    flex: 0.7 1 auto;
-    padding: 2% 0 0;
+  flex: 0.7 1 auto;
+  padding: 2% 0 0;
 }
-
 .rightTopMenu {
-    display: flex;
-    justify-content: space-between;
-    max-width: 306px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 306px;
 }
-
 .socialRight {
-    align-items: center;
+  align-items: center;
 }
-
 .socialRightLi {
-    min-width: 170px;
-    display: flex;
-    justify-content: space-between;
+  min-width: 170px;
+  display: flex;
+  justify-content: space-between;
 }
-
 .globes {
-    display: flex;
-    flex: 0.1 1 auto;
+  display: flex;
+  flex: 0.1 1 auto;
 }
-
 .globesTitle {
-    display: flex;
+  display: flex;
 }
-
 .mainMenu {
-    display: flex;
-    max-width: 310px;
-    flex-wrap: wrap;
-    justify-content: end;
-    padding: 5% 0 0;
+  display: flex;
+  max-width: 310px;
+  flex-wrap: wrap;
+  justify-content: end;
+  padding: 5% 0 0;
 }
-
 .mainMenuLi {
-    padding: 2% 5%;
+  padding: 2% 5%;
 }
-
 .secondLine {
-    display: flex;
-    padding-top: 5%;
-    position: relative;
-    overflow: hidden;
+  display: flex;
+  padding-top: 5%;
+  position: relative;
+  overflow: hidden;
 }
-
 .slideNavy {
-    flex: 1 1 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px;
-    max-width: 1900px;
-    margin: 7.6% auto 0;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  max-width: 1900px;
+  margin: 7.6% auto 0;
 }
-
 .slideNavySet {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 90px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90px;
 }
-
 .arrowRight {
-    display: flex;
-    justify-content: end;
-    transition: transform .7s linear;
+  display: flex;
+  justify-content: end;
+  transition: transform .7s linear;
 }
-
 .zoom {
-    transition: transform .7s linear;
+  transition: transform .7s linear;
 }
-
 .zoom:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 .position {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-
 .mainProp {
-    position: relative;
-    z-index: 1;
-    flex: 1 1 auto;
+  position: relative;
+  z-index: 1;
+  flex: 1 1 auto;
 }
-
 .mainProposition {
-    flex: 0.1 1 auto;
-    opacity: 0;
-    visibility: collapse;
-    transition: opacity, visibility .7s linear;
-    position: absolute;
+  flex: 0.1 1 auto;
+  opacity: 0;
+  visibility: collapse;
+  transition: opacity, visibility .7s linear;
+  position: absolute;
 }
-
 .mpAct {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
-
 .headMain {
-    max-width: 580px;
-    font-size: 87px;
-    padding: 10.5% 0 11.6% 0;
-    line-height: 89px;
-    transform: translateX(12%);
-    opacity: 0;
-    transition-property: opacity, transform;
-    transition-duration: .7s;
-    transition-timing-function: linear;
+  max-width: 580px;
+  font-size: 87px;
+  padding: 10.5% 0 11.6% 0;
+  line-height: 89px;
+  transform: translateX(12%);
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-duration: .7s;
+  transition-timing-function: linear;
 }
-
 .actTitle {
-    opacity: 1;
-    transform: translateX(0);
+  opacity: 1;
+  transform: translateX(0);
 }
-
 .actionMain {
-    position: relative;
-    display: block;
-    max-width: 307px;
-    padding: 16px 14px;
-    font-size: 25px;
-    letter-spacing: 0;
-    text-align: center;
-    line-height: 31px;
-    opacity: 0;
-    transition-delay: .7s;
-    transition-property: opacity;
-    transition-duration: .7s;
-    transition-timing-function: linear;
+  position: relative;
+  display: block;
+  max-width: 307px;
+  padding: 16px 14px;
+  font-size: 25px;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 31px;
+  opacity: 0;
+  transition-delay: .7s;
+  transition-property: opacity;
+  transition-duration: .7s;
+  transition-timing-function: linear;
 }
-
 .actM {
-    opacity: 1;
+  opacity: 1;
 }
-
 .Slider {
-    height: 73.2vh;
-    background-size: cover;
-    position: relative;
-    flex: 3 1 auto;
-    z-index: 0;
-    left: 15%;
+  height: 73.2vh;
+  background-size: cover;
+  position: relative;
+  flex: 3 1 auto;
+  z-index: 0;
+  left: 15%;
 }
-
 .SliderItem {
-    width: 53%;
-    height: 96%;
-    background-size: cover;
-    position: absolute;
-    left: 3%;
-    opacity: 0;
-    transition-property: clip-path, left, opacity, width;
-    transition-duration: .4s, 662ms, 283ms, 400ms;
-    transition-delay: .2s, 0s, .0ms, 100ms;
-    transition-timing-function: ease;
+  width: 53%;
+  height: 96%;
+  background-size: cover;
+  position: absolute;
+  left: 3%;
+  opacity: 0;
+  transition-property: clip-path, left, opacity, width;
+  transition-duration: .4s, 662ms, 283ms, 400ms;
+  transition-delay: .2s, 0s, .0ms, 100ms;
+  transition-timing-function: ease;
 }
-
 .SI0 {
-    top: 0;
-    background: url("../img/test1.jpg") center center no-repeat;
-}
-
-.currentSlideToBack {
-    transition-timing-function: cubic-bezier;
+  top: 0;
+  background: url("../img/test1.jpg") center center no-repeat;
 }
 
 .SI0act {
-    clip-path: polygon(7.77% 19.18%, 7.71% 9.69%, 7.3% 97.68%, 7.3% 92.94%);
+  clip-path: polygon(7.77% 19.18%, 7.71% 9.69%, 7.3% 97.68%, 7.3% 92.94%);
 }
-
 .SI1 {
-    top: 0;
-    background: url("../img/test2.jpg") center center no-repeat;
-    clip-path: polygon(84.99% 17.64%, 101.51% 5.73%, 101.11% 99.26%, 87% 92.87%);
-    left: 60%;
+  top: 0;
+  background: url("../img/test2.jpg") center center no-repeat;
+  clip-path: polygon(84.99% 17.64%, 101.51% 5.73%, 101.11% 99.26%, 87% 92.87%);
+  left: 60%;
 }
-
 .SI1act {
-    clip-path: polygon(7.8% 19.18%, 7.71% 9.69%, 8.98% 97.96%, 8.9% 92.94%);
+  clip-path: polygon(7.8% 19.18%, 7.71% 9.69%, 8.98% 97.96%, 8.9% 92.94%);
 }
-
 .SI2 {
-    top: 0;
-    background: url("../img/test3.jpg") center center no-repeat;
-    clip-path: polygon(84.69% 20.98%, 99.73% 6.5%, 99.62% 98.88%, 86% 90.44%);
-    left: 60%;
+  top: 0;
+  background: url("../img/test3.jpg") center center no-repeat;
+  clip-path: polygon(84.69% 20.98%, 99.73% 6.5%, 99.62% 98.88%, 86% 90.44%);
+  left: 60%;
 }
-
 .SI2act {
-    clip-path: polygon(7.5% 19.18%, 7.71% 9.69%, 7.3% 97.68%, 7.4% 92.94%);
+  clip-path: polygon(7.5% 19.18%, 7.71% 9.69%, 7.3% 97.68%, 7.4% 92.94%);
 }
-
 .SI3 {
-    top: 0;
-    background: url("../img/test4.jpg") center center no-repeat;
-    clip-path: polygon(86.33% 24.95%, 101.51% 5.73%, 101.11% 99.26%, 87% 91.34%);
-    left: 60%;
+  top: 0;
+  background: url("../img/test4.jpg") center center no-repeat;
+  clip-path: polygon(86.33% 24.95%, 101.51% 5.73%, 101.11% 99.26%, 87% 91.34%);
+  left: 60%;
 }
-
 .SI3act {
-    clip-path: polygon(7.77% 19.18%, 7.71% 9.69%, 7.3% 97.68%, 7.3% 92.94%);
+  clip-path: polygon(7.77% 19.18%, 7.71% 9.69%, 7.3% 97.68%, 7.3% 92.94%);
 }
-
 .SI4 {
-    top: 0;
-    background: url("../img/test5.jpg") center center no-repeat;
-    clip-path: polygon(78.46% 19.31%, 101.51% 5.73%, 101.11% 99.26%, 532px 90.82%);
-    left: 60%;
+  top: 0;
+  background: url("../img/test5.jpg") center center no-repeat;
+  clip-path: polygon(78.46% 19.31%, 101.51% 5.73%, 101.11% 99.26%, 532px 90.82%);
+  left: 60%;
 }
-
 .SI4act {
-    clip-path: polygon(7.77% 19.18%, 7.71% 9.69%, 7.3% 97.68%, 7.2% 92.94%);
+  clip-path: polygon(7.77% 19.18%, 7.71% 9.69%, 7.3% 97.68%, 7.2% 92.94%);
 }
-
 .prevSlide {
-    opacity: 0;
-    left: -5%;
-    transition-duration: 566ms, 1s, 155ms, 200ms;
-    transition-delay: 0ms, .2s, 355ms, 300ms;
+  opacity: 0;
+  left: -5%;
+  transition-duration: 566ms, 1s, 155ms, 200ms;
+  transition-delay: 0ms, .2s, 355ms, 300ms;
 }
-
-.prevSlideToBack {
-}
-
 .currentSlide {
-    opacity: 1;
-    left: 5%;
+  opacity: 1;
+  left: 5%;
 }
-
 .currentSlide.SI0 {
-    clip-path: polygon(14.75% 19.18%, 91.08% 8.75%, 91.39% 99.25%, 14% 90.76%);
+  clip-path: polygon(14.75% 19.18%, 91.08% 8.75%, 91.39% 99.25%, 14% 90.76%);
 }
-
 .currentSlide.SI1 {
-    clip-path: polygon(10.75% 0.98%, 100% 16.15%, 100% 94%, 10.3% 97%);
+  clip-path: polygon(10.75% 0.98%, 100% 16.15%, 100% 94%, 10.3% 97%);
 }
-
 .currentSlide.SI2 {
-    clip-path: polygon(7.8% 14%, 98% 8.05%, 98% 100.35%, 7.8% 80.76%);
+  clip-path: polygon(7.8% 14%, 98% 8.05%, 98% 100.35%, 7.8% 80.76%);
 }
-
 .currentSlide.SI3 {
-    clip-path: polygon(8% 3.2%, 96.98% 7.1%, 97.3% 92%, 8% 98.86%);
+  clip-path: polygon(8% 3.2%, 96.98% 7.1%, 97.3% 92%, 8% 98.86%);
 }
-
 .SliderBack {
-    bottom: 0;
-    width: 70%;
-    height: 73%;
-    position: absolute;
-    z-index: -1;
-    background-color: #d0d0d0;
-    opacity: 0;
-    transition-property: clip-path, left, opacity, width;
-    transition-duration: 552ms, 1237ms, 342ms, 432ms;
-    transition-delay: 0ms, 0ms, 0ms, 400ms;
-    transition-timing-function: ease;
-    left: 35%;
+  bottom: 0;
+  width: 70%;
+  height: 73%;
+  position: absolute;
+  z-index: -1;
+  background-color: #d0d0d0;
+  opacity: 0;
+  transition-property: clip-path, left, opacity, width;
+  transition-duration: 552ms, 1237ms, 342ms, 432ms;
+  transition-delay: 0ms, 0ms, 0ms, 400ms;
+  transition-timing-function: ease;
+  left: 35%;
 }
-
 .SB0 {
-    clip-path: polygon(1.73% 0, 80% 15%, 80% 79%, 1% 92.06%);
-    width: 25%;
+  clip-path: polygon(1.73% 0, 80% 15%, 80% 79%, 1% 92.06%);
+  width: 25%;
 }
-
 .SB1 {
-    clip-path: polygon(1.73% 20.79%, 100.04% -0.48%, 101.21% 100.19%, 0 84.06%);
-    width: 25%;
+  clip-path: polygon(1.73% 20.79%, 100.04% -0.48%, 101.21% 100.19%, 0 84.06%);
+  width: 25%;
 }
-
 .SB2 {
-    clip-path: polygon(41.93% 10.97%, 60.07% 17.63%, 58.83% 91.46%, 41% 100.01%);
-    width: 35%;
+  clip-path: polygon(41.93% 10.97%, 60.07% 17.63%, 58.83% 91.46%, 41% 100.01%);
+  width: 35%;
 }
-
 .SB3 {
-    clip-path: polygon(30.53% 21.18%, 113.09% 5.59%, 112.52% 98.84%, 30% 85.57%);
-    width: 35%;
+  clip-path: polygon(30.53% 21.18%, 113.09% 5.59%, 112.52% 98.84%, 30% 85.57%);
+  width: 35%;
 }
-
 .prevSlideSB {
-    opacity: 0;
-    left: 10%;
-    width: 0;
-    transition-duration: .9s, 1s, 254ms, 325ms;
-    transition-delay: 0s, 0s, 641ms, 577ms;
+  opacity: 0;
+  left: 10%;
+  width: 0;
+  transition-duration: .9s, 1s, 254ms, 325ms;
+  transition-delay: 0s, 0s, 641ms, 577ms;
 }
-
 .currentSlideSB {
-    opacity: .6;
-    width: 30%;
-    left: 25%;
+  opacity: .6;
+  width: 30%;
+  left: 25%;
 }
-
 .currentSlideSB.SB0 {
-    clip-path: polygon(1.73% 0, 80% 15%, 80% 79%, 1% 92.06%);
+  clip-path: polygon(1.73% 0, 80% 15%, 80% 79%, 1% 92.06%);
 }
-
 .currentSlideSB.SB1 {
-    clip-path: polygon(12.9% 4.14%, 90% 0, 90% 92.62%, 13.29% 86.58%);
+  clip-path: polygon(12.9% 4.14%, 90% 0, 90% 92.62%, 13.29% 86.58%);
 }
-
 .currentSlideSB.SB2 {
-    clip-path: polygon(0.89% 1.45%, 90% 11.77%, 90% 90.94%, 1.00% 94.32%);
+  clip-path: polygon(0.89% 1.45%, 90% 11.77%, 90% 90.94%, 1.00% 94.32%);
 }
-
 .currentSlideSB.SB3 {
-    clip-path: polygon(2.01% 5.99%, 90% -0.48%, 90% 92.79%, 1.28% 90.28%);
+  clip-path: polygon(2.01% 5.99%, 90% -0.48%, 90% 92.79%, 1.28% 90.28%);
 }
-
 .prevSlideSB.SB0 {
-    clip-path: polygon(13% 4%, 40% 0, 40% 93%, 13% 86%);
+  clip-path: polygon(13% 4%, 40% 0, 40% 93%, 13% 86%);
 }
-
 .prevSlideSB.SB1 {
-    clip-path: polygon(13% 4%, 40% 0, 40% 93%, 13% 86%);
+  clip-path: polygon(13% 4%, 40% 0, 40% 93%, 13% 86%);
 }
-
 .prevSlideSB.SB2 {
-    clip-path: polygon(13% 4%, 40% 0, 40% 93%, 13% 86%);
+  clip-path: polygon(13% 4%, 40% 0, 40% 93%, 13% 86%);
 }
-
 .prevSlideSB.SB3 {
-    clip-path: polygon(13% 4%, 40% 0, 40% 93%, 13% 86%);
+  clip-path: polygon(13% 4%, 40% 0, 40% 93%, 13% 86%);
 }
-
 .secondDisplay {
-    height: 100%;
-    position: relative;
+  height: 100%;
+  position: relative;
 }
-
 .secondDisplayIn {
-    display: flex;
-    height: 100%;
-    position: relative;
+  display: flex;
+  height: 100%;
+  position: relative;
 }
-
 .Slider2 {
-    flex: 1 1 50%;
-    position: relative;
-    height: 100%;
+  flex: 1 1 50%;
+  position: relative;
+  height: 100%;
 }
-
 .Slider2 .photo {
     /*! opacity: 0; */
 }
-
 .photo {
-    width: 0;
-    height: 100%;
-    background-size: cover;
-    position: absolute;
-    right: 6%;
-    transition-property: opacity, clip-path, right, width;
-    transition-duration: .9s, .7s, .9s, .9s;
-    transition-timing-function: linear;
-    transition-delay: .3s, .2s, .5s, .5s;
+  width: 0;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  right: 6%;
+  transition-property: opacity, clip-path, right, width;
+  transition-duration: .9s, .7s, .9s, .9s;
+  transition-timing-function: linear;
+  transition-delay: .3s, .2s, .5s, .5s;
 }
-
 .p0 {
-    top: 0;
-    background: url("../img/test1.jpg") center center no-repeat;
-    clip-path: polygon(0.1% 14.69%, 98.99% 4.43%, 98.98% 100.12%, 0.14% 90.35%);
-    margin: auto;
-    height: 77.9%;
+  top: 0;
+  background: url("../img/test1.jpg") center center no-repeat;
+  clip-path: polygon(0.1% 14.69%, 98.99% 4.43%, 98.98% 100.12%, 0.14% 90.35%);
+  margin: auto;
+  height: 77.9%;
 }
-
 .p1 {
-    top: 0;
-    background: url("../img/test2.jpg") center center no-repeat;
-    clip-path: polygon(-0.21% 6.26%, 99.41% 12.2%, 98.90% 96.35%, -0.26% 99.82%);
-    margin: auto;
-    height: 73.5%;
+  top: 0;
+  background: url("../img/test2.jpg") center center no-repeat;
+  clip-path: polygon(-0.21% 6.26%, 99.41% 12.2%, 98.90% 96.35%, -0.26% 99.82%);
+  margin: auto;
+  height: 73.5%;
 }
-
 .p2 {
-    top: 0;
-    background: url("../img/test3.jpg") center center no-repeat;
-    clip-path: polygon(0.44% 5.5%, 98.98% 0.34%, 99.57% 100.25%, 0.39% 88.94%);
-    margin: auto;
-    height: 73%;
+  top: 0;
+  background: url("../img/test3.jpg") center center no-repeat;
+  clip-path: polygon(0.44% 5.5%, 98.98% 0.34%, 99.57% 100.25%, 0.39% 88.94%);
+  margin: auto;
+  height: 73%;
 }
-
 .p3 {
-    top: 0;
-    background: url("../img/test4.jpg") center center no-repeat;
-    clip-path: polygon(0.01% 6.47%, 99.63% 10.47%, 100% 85.07%, -0.26% 99.36%);
-    margin: auto;
-    height: 74%;
+  top: 0;
+  background: url("../img/test4.jpg") center center no-repeat;
+  clip-path: polygon(0.01% 6.47%, 99.63% 10.47%, 100% 85.07%, -0.26% 99.36%);
+  margin: auto;
+  height: 74%;
 }
-
 .photoAct {
-    opacity: 1;
-    right: 6%;
-    width: 48%;
+  opacity: 1;
+  right: 6%;
+  width: 48%;
 }
-
 .photoAct.p0 {
-    width: 48%;
+  width: 48%;
 }
-
 .photoNoAct {
-    right: 75%;
-    opacity: 0;
-    width: 0;
-    clip-path: polygon(34.60% 28.83%, 100% 7.57%, 100% 90.14%, 34.73% 80.96%);
-    transition-duration: .9s, .7s, 916ms, 417ms;
-    transition-delay: .3s, .2s, 0s, .5s;
+  right: 75%;
+  opacity: 0;
+  width: 0;
+  clip-path: polygon(34.60% 28.83%, 100% 7.57%, 100% 90.14%, 34.73% 80.96%);
+  transition-duration: .9s, .7s, 916ms, 417ms;
+  transition-delay: .3s, .2s, 0s, .5s;
 }
-
 .photoBack {
-    height: 67.4%;
-    position: absolute;
-    z-index: -1;
-    background-color: #d0d0d0;
-    bottom: auto;
-    top: 7%;
-    box-shadow: 0 0 2px inset #000;
-    opacity: 0;
-    clip-path: polygon(-0.21% 6.26%, 99.41% 12.2%, 98.90% 96.35%, -0.26% 99.82%);
-    right: 40%;
-    width: 11.1%;
-    transform: rotateY(70deg);
+  height: 67.4%;
+  position: absolute;
+  z-index: -1;
+  background-color: #d0d0d0;
+  bottom: auto;
+  top: 7%;
+  box-shadow: 0 0 2px inset #000;
+  opacity: 0;
+  clip-path: polygon(-0.21% 6.26%, 99.41% 12.2%, 98.90% 96.35%, -0.26% 99.82%);
+  right: 40%;
+  width: 11.1%;
+  transform: rotateY(70deg);
 }
-
 .photoActB.pb0 {
-    clip-path: polygon(-0.21% 6.26%, 99.41% 12.2%, 98.90% 96.35%, -0.26% 99.82%);
+  clip-path: polygon(-0.21% 6.26%, 99.41% 12.2%, 98.90% 96.35%, -0.26% 99.82%);
 }
-
 .photoActB.pb1 {
-    clip-path: polygon(0.44% 5.5%, 98.98% 0.34%, 99.57% 100.25%, 0.39% 88.94%);
+  clip-path: polygon(0.44% 5.5%, 98.98% 0.34%, 99.57% 100.25%, 0.39% 88.94%);
 }
-
 .photoActB .pb2 {
-    clip-path: polygon(0.01% 6.47%, 99.63% 10.47%, 100% 85.07%, -0.26% 99.36%);
+  clip-path: polygon(0.01% 6.47%, 99.63% 10.47%, 100% 85.07%, -0.26% 99.36%);
 }
-
 .photoActB.pb3 {
-    clip-path: polygon(0.1% 14.69%, 98.99% 4.43%, 98.98% 100.12%, 0.14% 90.35%);
+  clip-path: polygon(0.1% 14.69%, 98.99% 4.43%, 98.98% 100.12%, 0.14% 90.35%);
 }
-
 .photoActB {
-    transition-property: opacity, clip-path, right, width, transform;
-    transition-duration: .2s, 0.4s, 0.7s, .3s, .4s;
-    transition-timing-function: linear;
-    transition-delay: .7s, 1.5s, 1.2s, 1s, .7s;
-    opacity: 1;
+  transition-property: opacity, clip-path, right, width, transform;
+  transition-duration: .2s, 0.4s, 0.7s, .3s, .4s;
+  transition-timing-function: linear;
+  transition-delay: .7s, 1.5s, 1.2s, 1s, .7s;
+  opacity: 1;
     /*! opacity: 0; */
-    right: 50%;
-    width: 45%;
-    transform: rotateY(0);
+  right: 50%;
+  width: 45%;
+  transform: rotateY(0);
 }
-
 .photoNoActB {
-    transition-property: opacity, clip-path, right, width, transform;
-    transition-duration: .7s, .1s, 1.7s, .7s, .7s;
-    transition-timing-function: linear;
-    transition-delay: 1.2s, .7s, 0s, 1s, .7s;
-    right: 65%;
-    clip-path: polygon(2.90% 4.55%, 100% 12.72%, 100% 89.16%, 1px 95.93%);
-    width: 60%;
-    transform: rotateY(70deg);
+  transition-property: opacity, clip-path, right, width, transform;
+  transition-duration: .7s, .1s, 1.7s, .7s, .7s;
+  transition-timing-function: linear;
+  transition-delay: 1.2s, .7s, 0s, 1s, .7s;
+  right: 65%;
+  clip-path: polygon(2.90% 4.55%, 100% 12.72%, 100% 89.16%, 1px 95.93%);
+  width: 60%;
+  transform: rotateY(70deg);
 }
-
 .pbPhoto {
-    transition-property: opacity;
-    transition-delay: .7s;
-    transition-timing-function: linear;
-    transition-duration: .7s;
-    opacity: .4;
+  transition-property: opacity;
+  transition-delay: .7s;
+  transition-timing-function: linear;
+  transition-duration: .7s;
+  opacity: .4;
 }
-
 .pb1photo {
-    background: url("../img/test1.jpg") center center no-repeat;
+  background: url("../img/test1.jpg") center center no-repeat;
 }
-
 .pb2photo {
-    background: url("../img/test2.jpg") center center no-repeat;
+  background: url("../img/test2.jpg") center center no-repeat;
 }
-
 .pb3photo {
-    background: url("../img/test3.jpg") center center no-repeat;
+  background: url("../img/test3.jpg") center center no-repeat;
 }
-
 .pb4photo {
-    background: url("../img/test4.jpg") center center no-repeat;
+  background: url("../img/test4.jpg") center center no-repeat;
 }
-
 .photoBackSet {
-    position: relative;
-    box-shadow: 0 0 2px #000;
-    height: 100%;
-    width: 100%;
+  position: relative;
+  box-shadow: 0 0 2px #000;
+  height: 100%;
+  width: 100%;
 }
-
 .pbItem {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
 }
-
 .photoBackFront {
-    transition-property: background-color, opacity;
-    transition-delay: .7s, .7s;
-    transition-timing-function: linear;
-    transition-duration: .7s, .7s;
-    opacity: .4;
-    background-color: #BBB;
+  transition-property: background-color, opacity;
+  transition-delay: .7s, .7s;
+  transition-timing-function: linear;
+  transition-duration: .7s, .7s;
+  opacity: .4;
+  background-color: #BBB;
 }
-
 .photoNoActB .photoBackFront {
-    background-color: #BBB;
-    opacity: 0;
+  background-color: #BBB;
+  opacity: 0;
 }
-
 .photoActB .photoBackFront {
-    opacity: 0.6;
-    background-color: #E4CFAE;
+  opacity: 0.6;
+  background-color: #E4CFAE;
 }
-
 .photoActB .pbPhoto {
-    opacity: .6;
+  opacity: .6;
 }
-
 .photoNoActB .pbPhoto {
-    opacity: 0;
+  opacity: 0;
 }
-
 .content {
-    flex: 0.05 1 auto;
-    padding: 4.7% 0;
+  flex: 0.05 1 auto;
+  padding: 4.7% 0;
 }
-
 .contentH2 {
-    line-height: 67px;
-    font-size: 56px;
-    letter-spacing: -0.9px;
-    max-width: 450px;
+  line-height: 67px;
+  font-size: 56px;
+  letter-spacing: -0.9px;
+  max-width: 450px;
 }
-
 .contentP {
-    line-height: 33px;
-    letter-spacing: 1px;
-    max-width: 550px;
-    margin: 4.3% 0 0 0;
+  line-height: 33px;
+  letter-spacing: 1px;
+  max-width: 550px;
+  margin: 4.3% 0 0 0;
 }
-
 .SecSliderMenu {
-    margin: 3.9% 0 3.3% 0;
-    display: flex;
-    flex-wrap: wrap;
+  margin: 3.9% 0 3.3% 0;
+  display: flex;
+  flex-wrap: wrap;
 }
-
 .SecSliderMenuLi {
-    padding: 2.9% 1%;
-    width: 40%;
+  padding: 2.9% 1%;
+  width: 40%;
 }
-
 .AllList {
-    border: 2px solid #C26E1F;
-    color: #9C6E40;
-    display: block;
-    width: max-content;
-    padding: 15px 22px;
-    font-size: 18px;
+  border: 2px solid #C26E1F;
+  color: #9C6E40;
+  display: block;
+  width: max-content;
+  padding: 15px 22px;
+  font-size: 18px;
 }
-
 .SliderSecBack {
-    right: 7.6%;
-    left: auto;
-    width: 22.5%;
-    clip-path: polygon(0.97% 15.81%, 100.09% 0.2%, 99.34% 99.72%, 3px 88.06%);
-    top: 30%;
-    height: 73.8%;
-    background-color: #FBF5F1;
-    position: absolute;
-    z-index: -1;
-    transition-property: transform;
-    transition-duration: .7s;
-    transition-timing-function: linear;
-    transition-delay: .7s;
+  right: 7.6%;
+  left: auto;
+  width: 22.5%;
+  clip-path: polygon(0.97% 15.81%, 100.09% 0.2%, 99.34% 99.72%, 3px 88.06%);
+  top: 30%;
+  height: 73.8%;
+  background-color: #FBF5F1;
+  position: absolute;
+  z-index: -1;
+  transition-property: transform;
+  transition-duration: .7s;
+  transition-timing-function: linear;
+  transition-delay: .7s;
 }
-
 .SlideBack {
-    transform: translateY(20%);
+  transform: translateY(20%);
 }
-
 .SlideBackAnim {
-    transform: translateY(0);
+  transform: translateY(0);
 }
