@@ -4,7 +4,12 @@
     height: 100%;
 }
 
-.out, .outMain, p, h1, h2, h3 {
+.out,
+.outMain,
+p,
+h1,
+h2,
+h3 {
     margin: 0;
 }
 
@@ -184,8 +189,8 @@ ul {
     align-items: center;
 }
 
-.viberIcon, .telegramIcon {
-
+.viberIcon,
+.telegramIcon {
     margin: 0 4px;
 }
 
@@ -221,10 +226,12 @@ ul {
 
 .bl2 {
     width: 50%
+
 }
 
 .bl3 {
     width: 70%
+
 }
 
 .catalog {
@@ -262,12 +269,10 @@ ul {
 }
 
 .socialRight {
-
     align-items: center;
 }
 
 .socialRightLi {
-
     min-width: 170px;
     display: flex;
     justify-content: space-between;
@@ -422,6 +427,10 @@ ul {
     background: url("../img/test1.jpg") center center no-repeat;
 }
 
+.currentSlideToBack {
+    transition-timing-function: cubic-bezier;
+}
+
 .SI0act {
     clip-path: polygon(7.77% 19.18%, 7.71% 9.69%, 7.3% 97.68%, 7.3% 92.94%);
 }
@@ -475,6 +484,9 @@ ul {
     left: -5%;
     transition-duration: 566ms, 1s, 155ms, 200ms;
     transition-delay: 0ms, .2s, 355ms, 300ms;
+}
+
+.prevSlideToBack {
 }
 
 .currentSlide {
