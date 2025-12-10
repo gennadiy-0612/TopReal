@@ -1,18 +1,3 @@
-/**
- * Використання:
- * 1. window.addEventListener('load', () => {
- * 2.    const topSlider = new TopSlider();
- * 3.    const secSlider = new SecondarySlider('.weMade');
- * 4.
- * 5.    document.querySelector('.arrowRight').addEventListener('click', topSlider.more, { passive: true });
- * 6.    document.querySelector('.arrowLeft').addEventListener('click', topSlider.less, { passive: true });
- * 7.    secSlider.addListeners('.weMade'); // Додає обробники кліків для елементів '.weMade'
- * 8.
- * 9.    new IntersectionWatcher({ selector: '.SlideBack', animationName: 'SlideBackAnim', threshold: 0.5 }).observe();
- * 10. });
- */
-
-
 // Використовуємо класи для кращої організації та ООП
 class TopSlider {
     constructor(maxIndex = 4) {
@@ -232,6 +217,50 @@ class IntersectionWatcher {
 window.addEventListener('load', () => {
     // Створюємо екземпляри класів
     const topSlider = new TopSlider();
+// ... (існуючий код, частина до функції SecSlider) ...
+
+// SecSlider: Slider on secondDisplay
+const weMade = document.querySelectorAll('.weMade');
+const photo = document.querySelectorAll('.photo');
+let activeSlide = 0;
+
+function SecSlider(index) {
+    if (activeSlide === index) {
+        return; // Якщо слайд не змінюється, виходимо
+    }
+
+    // 1. Приховуємо поточний активний слайд
+    // Додаємо клас, який ініціює анімацію приховування
+    photo[activeSlide].classList.add('photoNoAct');
+
+    // 2. Встановлюємо новий активний слайд
+    activeSlide = index;
+
+    // 3. Знімаємо клас photoAct з попереднього слайда та додаємо новому
+    // Використовуємо setTimeout, щоб клас photoNoAct мав час для повної анімації (1.2с = 1200мс)
+    setTimeout(() => {
+        // Видаляємо клас .photoNoAct та .photoAct з попереднього слайда
+        photo.forEach(p => {
+            p.classList.remove('photoAct', 'photoNoAct');
+        });
+
+        // Додаємо клас .photoAct новому слайду
+        photo[activeSlide].classList.add('photoAct');
+
+        // Оновлюємо стилі підменю
+        weMade.forEach((item, i) => {
+            item.classList.remove('VividBrownTrapezoid');
+        });
+        weMade[activeSlide].classList.add('VividBrownTrapezoid');
+
+    }, 1200); // Час має відповідати тривалості CSS transition (1.2s)
+}
+
+weMade.forEach((item, index) => {
+    item.addEventListener('click', () => SecSlider(index));
+});
+
+// ... (решта файлу JS) ...
     const secSlider = new SecondarySlider('.weMade'); // .weMade - елементи для перемикання
 
     // Прив'язуємо методи до подій
