@@ -1,419 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&display=swap');
-
-/* ====================================
-   1. CSS Custom Properties (Змінні)
-   ==================================== */
-:root {
-    /* Кольори */
-    --color-white: #FFFFFF;
-    --color-vivid-brown: #BF8341;
-    --color-border-brown: #C26E1F;
-    --color-text-brown: #9C6E40;
-    --color-bg-light: #FBF5F1;
-    --color-bg-slider-back: #d0d0d0;
-    --color-black-transparent: #00000059;
-
-    /* Шрифти */
-    --font-family-base: 'Raleway', sans-serif;
-    
-    /* Тривалість анімацій */
-    --duration-short: 0.2s;
-    --duration-medium: 0.4s;
-    --duration-long: 0.7s;
-    --timing-linear: linear;
-    --timing-ease: ease;
-}
-
-/* ====================================
-   2. Базові Скидання та Скидання Модулів
-   ==================================== */
-.out, .outMain {
-    height: 100%;
-}
-
-.out,
-.outMain,
-p,
-h1,
-h2,
-h3 {
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.cursorPoint:hover {
-    cursor: pointer;
-}
-
-/* ====================================
-   3. Типографія та Кольори
-   ==================================== */
-/* Скидання шрифту для всіх шрифтових класів */
-.Ag3, .Ag4, .Ag41, .Ag6, .Ag61, .Ag62, .Ag7, .Ag81, .Ag8l, .Ag8 {
-    font-family: var(--font-family-base);
-}
-
-.Ag3 {
-    font: 300 20px/30px var(--font-family-base);
-}
-
-.Ag4 {
-    font: 400 18px/21px var(--font-family-base);
-}
-
-.Ag41 {
-    font: 400 20px/23px var(--font-family-base);
-}
-
-.Ag6 {
-    font: 600 27px/31px var(--font-family-base);
-}
-
-.Ag61 {
-    font: 600 24px/45px var(--font-family-base);
-}
-
-.Ag62 {
-    font: 600 25px/28px var(--font-family-base);
-}
-
-.Ag7 {
-    font: 700 50px/60px var(--font-family-base);
-}
-
-.Ag81 {
-    font: 800 14px/16px var(--font-family-base);
-}
-
-.Ag8l {
-    font: 800 22px/26px var(--font-family-base);
-}
-
-.Ag8 {
-    font: 800 80px/80px var(--font-family-base);
-}
-
-.colorWhite {
-    color: var(--color-white);
-}
-
-.VividBrown {
-    background-color: var(--color-vivid-brown);
-}
-
-.VividBrownTrapezoid {
-    color: var(--color-white);
-    background-color: var(--color-vivid-brown);
-}
-
-/* ====================================
-   4. Секція Head (Головний Слайдер)
-   ==================================== */
-
-.Head {
-    height: 100%;
+/* ================================================================================================================================= */
+/* secondDisplay */
+.secondDisplay {
     position: relative;
-}
-
-.Head::before {
-    content: '';
-    position: absolute;
-    background-color: #000;
-    height: 100%;
     width: 100%;
-    opacity: .3;
-    clip-path: polygon(0 0, 100% 0, 100% 76.7%, 0 91.8%);
-}
-
-.headBack {
     height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+/* secondDisplay/Slider2 */
+.Slider2 {
     position: absolute;
-    top: 0;
     width: 100%;
-    z-index: -1;
-    /* Оновлена логіка переходів для видимості */
-    opacity: 0;
-    visibility: hidden; 
-    transition: opacity var(--duration-long) var(--timing-linear), 
-                visibility 0s var(--duration-long); /* visibility спрацьовує після opacity */
+    height: 100%;
 }
-
-.actBack {
-    opacity: 1;
-    visibility: visible;
-    transition-delay: 0s;
-}
-
-/* Групування фонових зображень */
-.hd1, .hd2, .hd3, .hd4, .hd5 {
-    background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 76.7%, 0 91.8%);
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.hd1 {
-    background-image: url("../img/topBack.png");
-}
-
-.hd2 {
-    background-image: url("../img/test2.jpg");
-}
-
-.hd3 {
-    background-image: url("../img/test3.jpg");
-}
-
-.hd4 {
-    background-image: url("../img/test4.jpg");
-}
-
-.hd5 {
-    background-image: url("../img/test5.jpg");
-}
-
-
-/* -- Навігація -- */
-
-.firstSet {
-    width: 100%;
-    background: linear-gradient(var(--color-black-transparent), var(--color-black-transparent), var(--color-black-transparent), transparent);
-    height: 19%;
-}
-
-.firstOut {
-    max-width: 1600px;
-    margin: auto;
-    position: relative;
-}
-/* ... (стилі верхньої навігації без змін) ... */
-
-/* -- Контент слайдера (Main Proposition) -- */
-
-.mainProp {
-    position: relative;
-    z-index: 1;
-    flex: 1 1 auto;
-}
-
-.mainProposition {
-    flex: 0.1 1 auto;
-    opacity: 0;
-    visibility: collapse;
-    transition: opacity, visibility var(--duration-long) var(--timing-linear);
-    position: absolute;
-}
-
-.mpAct {
-    visibility: visible;
-    opacity: 1;
-}
-
-.headMain {
-    /* ... інші стилі ... */
-    transform: translateX(12%);
-    opacity: 0;
-    transition-property: opacity, transform;
-    transition-duration: var(--duration-long);
-    transition-timing-function: var(--timing-linear);
-}
-
-.actTitle {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.actionMain {
-    /* ... інші стилі ... */
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: var(--duration-long);
-    transition-timing-function: var(--timing-linear);
-    transition-delay: var(--duration-long); /* Збережено delay .7s */
-}
-
-.actM {
-    opacity: 1;
-}
-
-/* -- Основні елементи слайдера (Slider Items) -- */
-
-.Slider {
-    /* ... інші стилі ... */
-    z-index: 0;
-    left: 15%;
-}
-
-.SliderItem {
-    /* ... інші стилі ... */
-    opacity: 0;
-    /* Використовуємо окремі значення, але з групуванням */
-    transition-property: clip-path, left, opacity, width;
-    transition-duration: .4s, 662ms, 283ms, 400ms;
-    transition-delay: .2s, 0s, .0ms, 100ms;
-    transition-timing-function: var(--timing-ease);
-}
-
-/* Групування фонових зображень слайдера */
-.SI0, .SI1, .SI2, .SI3, .SI4 {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    top: 0;
-}
-.SI0 { background-image: url("../img/test1.jpg"); }
-.SI1 { background-image: url("../img/test2.jpg"); }
-.SI2 { background-image: url("../img/test3.jpg"); }
-.SI3 { background-image: url("../img/test4.jpg"); }
-.SI4 { background-image: url("../img/test5.jpg"); }
-
-/* ... (складні clip-path та позиції залишено без змін через їхню специфічність) ... */
-
-.prevSlide {
-    opacity: 0;
-    left: -5%;
-    transition-duration: 566ms, 1s, 155ms, 200ms;
-    transition-delay: 0ms, .2s, 355ms, 300ms;
-}
-
-.currentSlide {
-    opacity: 1;
-    left: 5%;
-}
-
-/* -- Фон Слайдера (Slider Back) -- */
-
-.SliderBack {
-    /* ... інші стилі ... */
-    background-color: var(--color-bg-slider-back);
-    opacity: 0;
-    /* Збережено складні transition-властивості */
-}
-
-.prevSlideSB {
-    opacity: 0;
-    left: 10%;
-    width: 0;
-    transition-duration: .9s, 1s, 254ms, 325ms;
-    transition-delay: 0s, 0s, 641ms, 577ms;
-}
-
-.currentSlideSB {
-    opacity: .6;
-    width: 30%;
-    left: 25%;
-}
-
-/* ====================================
-   5. Секція Second Display (Вторинний Слайдер)
-   ==================================== */
-
-.weMade {
-    transition-property: background-color, color;
-    transition-duration: var(--duration-short);
-    transition-timing-function: var(--timing-linear);
-    /* ... інші стилі ... */
-}
-
-/* -- Фото Слайдера -- */
 
 .photo {
-    /* ... інші стилі ... */
-    transition-property: opacity, clip-path, right, width;
-    transition-duration: .9s, .7s, .9s, .9s;
-    transition-timing-function: var(--timing-linear);
-    transition-delay: .3s, .2s, .5s, .5s;
-}
-
-/* Групування фонових зображень фото */
-.p0, .p1, .p2, .p3 {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
-    margin: auto;
-}
-.p0 { background-image: url("../img/test1.jpg"); height: 77.9%; }
-.p1 { background-image: url("../img/test2.jpg"); height: 73.5%; }
-.p2 { background-image: url("../img/test3.jpg"); height: 73%; }
-.p3 { background-image: url("../img/test4.jpg"); height: 74%; }
-
-/* ... (стилі photoAct/photoNoAct) ... */
-
-/* -- Фон Фото (Photo Back) -- */
-
-.photoBack {
-    /* ... інші стилі ... */
-    background-color: var(--color-bg-slider-back);
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0; /* Базовий стан - приховано */
+    transform: scale(1.1);
+    transition: all 1.2s ease-in-out; /* Синхронізована тривалість 1.2s */
+    pointer-events: none;
 }
 
-.photoActB {
-    transition-property: opacity, clip-path, right, width, transform;
-    transition-duration: .2s, 0.4s, 0.7s, .3s, .4s;
-    transition-timing-function: var(--timing-linear);
-    transition-delay: .7s, 1.5s, 1.2s, 1s, .7s;
-    /* ... інші стилі ... */
+.photo.p0 {
+    background-image: url('../img/SD0.jpg');
 }
 
-.photoNoActB {
-    transition-property: opacity, clip-path, right, width, transform;
-    transition-duration: .7s, .1s, 1.7s, .7s, .7s;
-    transition-timing-function: var(--timing-linear);
-    transition-delay: 1.2s, .7s, 0s, 1s, .7s;
-    /* ... інші стилі ... */
+.photo.p1 {
+    background-image: url('../img/SD1.jpg');
 }
 
-.photoBackFront {
-    transition-property: background-color, opacity;
-    transition-delay: .7s, .7s;
-    transition-timing-function: var(--timing-linear);
-    transition-duration: .7s, .7s;
+.photo.p2 {
+    background-image: url('../img/SD2.jpg');
 }
 
-.photoActB .photoBackFront {
-    opacity: 0.6;
-    background-color: #E4CFAE; /* Збережено специфічний колір */
+.photo.p3 {
+    background-image: url('../img/SD3.jpg');
 }
 
-/* -- Контент та Меню -- */
-
-.contentH2 {
-    line-height: 67px;
-    font-size: 56px;
-    letter-spacing: -0.9px;
-    max-width: 450px;
+.photo.p4 {
+    background-image: url('../img/SD4.jpg');
 }
 
-.AllList {
-    border: 2px solid var(--color-border-brown);
-    color: var(--color-text-brown);
-    /* ... інші стилі ... */
+.photo.photoAct {
+    opacity: 1; /* Активний стан - видно */
+    transform: scale(1);
+    transition: all 1.2s ease-in-out; /* Синхронізована тривалість 1.2s */
 }
 
-.SliderSecBack {
-    /* ... інші стилі ... */
-    background-color: var(--color-bg-light);
-    /* ... інші стилі ... */
+.photo.photoNoAct {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 1.2s ease-in-out; /* Синхронізована тривалість 1.2s */
 }
 
-/* -- Анімація видимості -- */
-.SlideBack {
-    transform: translateY(20%);
-    transition-property: transform;
-    transition-duration: var(--duration-long);
-    transition-timing-function: var(--timing-linear);
-    transition-delay: var(--duration-long);
-}
-
-.SlideBackAnim {
-    transform: translateY(0);
-}
+/* ================================================================================================================================= */
+/* ... (решта вашого коду main.css) ... */
